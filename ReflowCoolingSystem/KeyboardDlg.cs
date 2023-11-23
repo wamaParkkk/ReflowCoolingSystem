@@ -26,8 +26,8 @@ namespace ReflowCoolingSystem
 
         private void KeyboardDlg_Load(object sender, EventArgs e)
         {
-            Top = 200;
-            Left = 250;
+            Top = 300;
+            Left = 300;
 
             m_bShift = false;
             m_bCapsLock = false;

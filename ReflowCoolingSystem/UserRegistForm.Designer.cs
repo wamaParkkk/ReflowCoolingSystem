@@ -112,7 +112,7 @@
             this.dataGridViewUserRegist.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewUserRegist.EnableHeadersVisualStyles = false;
             this.dataGridViewUserRegist.GridColor = System.Drawing.Color.White;
-            this.dataGridViewUserRegist.Location = new System.Drawing.Point(372, 23);
+            this.dataGridViewUserRegist.Location = new System.Drawing.Point(12, 23);
             this.dataGridViewUserRegist.Name = "dataGridViewUserRegist";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -124,7 +124,7 @@
             this.dataGridViewUserRegist.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewUserRegist.RowTemplate.Height = 23;
             this.dataGridViewUserRegist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewUserRegist.Size = new System.Drawing.Size(734, 478);
+            this.dataGridViewUserRegist.Size = new System.Drawing.Size(734, 422);
             this.dataGridViewUserRegist.TabIndex = 1;
             this.dataGridViewUserRegist.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             this.dataGridViewUserRegist.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
@@ -178,9 +178,9 @@
             this.boxUserRegist.Controls.Add(this.label2);
             this.boxUserRegist.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxUserRegist.ForeColor = System.Drawing.Color.Navy;
-            this.boxUserRegist.Location = new System.Drawing.Point(1112, 14);
+            this.boxUserRegist.Location = new System.Drawing.Point(752, 14);
             this.boxUserRegist.Name = "boxUserRegist";
-            this.boxUserRegist.Size = new System.Drawing.Size(316, 487);
+            this.boxUserRegist.Size = new System.Drawing.Size(316, 432);
             this.boxUserRegist.TabIndex = 13;
             this.boxUserRegist.TabStop = false;
             this.boxUserRegist.Text = "사용자 등록";
@@ -294,7 +294,7 @@
             this.boxUserChange.Controls.Add(this.textBoxChangeId);
             this.boxUserChange.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxUserChange.ForeColor = System.Drawing.Color.Navy;
-            this.boxUserChange.Location = new System.Drawing.Point(675, 507);
+            this.boxUserChange.Location = new System.Drawing.Point(317, 451);
             this.boxUserChange.Name = "boxUserChange";
             this.boxUserChange.Size = new System.Drawing.Size(430, 219);
             this.boxUserChange.TabIndex = 27;
@@ -447,7 +447,7 @@
             this.boxUserDel.Controls.Add(this.textBoxDeleteId);
             this.boxUserDel.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxUserDel.ForeColor = System.Drawing.Color.Navy;
-            this.boxUserDel.Location = new System.Drawing.Point(675, 732);
+            this.boxUserDel.Location = new System.Drawing.Point(317, 676);
             this.boxUserDel.Name = "boxUserDel";
             this.boxUserDel.Size = new System.Drawing.Size(431, 136);
             this.boxUserDel.TabIndex = 26;
@@ -521,7 +521,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1766, 880);
+            this.ClientSize = new System.Drawing.Size(1172, 824);
             this.Controls.Add(this.boxUserChange);
             this.Controls.Add(this.boxUserDel);
             this.Controls.Add(this.boxUserRegist);

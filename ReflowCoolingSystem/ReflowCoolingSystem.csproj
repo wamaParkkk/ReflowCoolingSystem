@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,15 +32,40 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Amkor_logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ajin_IO_driver">
       <HintPath>..\..\Ajin_IO_driver\Ajin_IO_driver\bin\Release\Ajin_IO_driver.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +92,11 @@
       <DependentUpon>ConfigureForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Define.cs" />
+    <Compile Include="DeviceRegistDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeviceRegistDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DigitalDlg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +110,12 @@
       <DependentUpon>EventLogForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="InterlockDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterlockDisplayForm.designer.cs">
+      <DependentUpon>InterlockDisplayForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="KeyboardDlg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +148,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeForm.designer.cs">
+      <DependentUpon>RecipeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeSelectForm.designer.cs">
+      <DependentUpon>RecipeSelectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Squence\Cooling.cs" />
     <Compile Include="Struct.cs" />
     <Compile Include="UserDataDataSet.Designer.cs">
@@ -135,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EventLogForm.resx">
       <DependentUpon>EventLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterlockDisplayForm.resx">
+      <DependentUpon>InterlockDisplayForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KeyboardDlg.resx">
       <DependentUpon>KeyboardDlg.cs</DependentUpon>
@@ -161,9 +213,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RecipeForm.resx">
+      <DependentUpon>RecipeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipeSelectForm.resx">
+      <DependentUpon>RecipeSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserRegistForm.resx">
       <DependentUpon>UserRegistForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DeviceRegistDataSet.xsc">
+      <DependentUpon>DeviceRegistDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DeviceRegistDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeviceRegistDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DeviceRegistDataSet.xss">
+      <DependentUpon>DeviceRegistDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -174,6 +243,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\SW operation manual_Reflow air knife system.pdf" />
     <None Include="UserDataDataSet.xsc">
       <DependentUpon>UserDataDataSet.xsd</DependentUpon>
     </None>
@@ -194,7 +264,6 @@
     <None Include="images\register.png" />
     <None Include="images\Maint.png" />
     <None Include="images\loginGroup.png" />
-    <None Include="images\Chamber\Img_PCB.png" />
     <None Include="images\log.png" />
     <None Include="images\ExitButton.png" />
     <None Include="images\ConfigButton.png" />
@@ -202,9 +271,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Amkor_logo.ico" />
+    <None Include="images\RecipeButton.png" />
+    <None Include="images\Chamber\Img_Cooler.png" />
+    <None Include="images\Chamber\Img_Reflow.jpg" />
+    <None Include="images\Chamber\Img_Reflow-removebg-preview.png" />
+    <None Include="images\Air1.png" />
+    <None Include="images\Air2.png" />
+    <None Include="images\Air3.png" />
+    <None Include="images\Air4.png" />
+    <None Include="images\Chamber\Img_DefluxCleaner.png" />
+    <Content Include="DeviceRegist.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="images\buzzer.png" />
+    <None Include="images\UserGuide.png" />
     <Content Include="UserData.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

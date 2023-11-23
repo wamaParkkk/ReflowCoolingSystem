@@ -48,7 +48,8 @@ namespace ReflowCoolingSystem
             this.treeView.Location = new System.Drawing.Point(9, 53);
             this.treeView.Name = "treeView";
             this.treeView.SelectedImageIndex = 0;
-            this.treeView.Size = new System.Drawing.Size(285, 815);
+            this.treeView.ShowRootLines = false;
+            this.treeView.Size = new System.Drawing.Size(285, 759);
             this.treeView.TabIndex = 0;
             this.treeView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView_NodeMouseClick);
             // 
@@ -68,7 +69,7 @@ namespace ReflowCoolingSystem
             this.richTextBox.Location = new System.Drawing.Point(300, 53);
             this.richTextBox.Name = "richTextBox";
             this.richTextBox.ReadOnly = true;
-            this.richTextBox.Size = new System.Drawing.Size(860, 815);
+            this.richTextBox.Size = new System.Drawing.Size(860, 759);
             this.richTextBox.TabIndex = 1;
             this.richTextBox.Text = "";
             // 
@@ -113,7 +114,7 @@ namespace ReflowCoolingSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1766, 880);
+            this.ClientSize = new System.Drawing.Size(1172, 824);
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.buttonFont);
             this.Controls.Add(this.richTextBox);

@@ -1,0 +1,6 @@
+[2023-05-15, 08:49:26] Start the air blow setup
+[2023-05-15, 08:49:26] Loading registered device
+[2023-05-15, 08:49:29] Loading process recipe file
+[2023-05-15, 08:49:29] Failed to read recipe file
+[2023-05-15, 08:49:29] Process has stopped : Abort
+[2023-05-15, 08:49:30] [LOG-IN] [000000_Amkor_Master]

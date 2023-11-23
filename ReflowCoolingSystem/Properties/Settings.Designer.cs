@@ -32,5 +32,15 @@ namespace ReflowCoolingSystem.Properties {
                 return ((string)(this["UserDataConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\DeviceRegist.accdb")]
+        public string DeviceRegistConnectionString {
+            get {
+                return ((string)(this["DeviceRegistConnectionString"]));
+            }
+        }
     }
 }

@@ -8,9 +8,7 @@ using System.Windows.Forms;
 namespace ReflowCoolingSystem
 {
     public partial class UserRegistForm : Form
-    {
-        MainForm mainForm;
-
+    {        
         string[] grp = new string[3] { "Master", "Maintnance", "User" };
         //string UserLevel;
 
@@ -31,8 +29,8 @@ namespace ReflowCoolingSystem
             // TODO: 이 코드는 데이터를 'userDataDataSet.UserTable' 테이블에 로드합니다. 필요 시 이 코드를 이동하거나 제거할 수 있습니다.
             this.userTableTableAdapter.Fill(this.userDataDataSet.UserTable);
 
-            Width = 1766;
-            Height = 880;
+            Width = 1172;
+            Height = 824;
             Top = 0;
             Left = 0;
 
@@ -112,7 +110,7 @@ namespace ReflowCoolingSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "알림");
+                MessageBox.Show(ex.Message, "Notification");
             }
         }
 
@@ -151,7 +149,7 @@ namespace ReflowCoolingSystem
                                     cmd.CommandText = sql;
                                     cmd.ExecuteNonQuery();
 
-                                    MessageBox.Show("사용자 등록을 완료했습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    MessageBox.Show("사용자 등록을 완료했습니다.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                                     textBoxId.Text = "";
                                     comboBoxLevel.Text = "";
@@ -159,31 +157,31 @@ namespace ReflowCoolingSystem
                                 }
                                 else
                                 {
-                                    MessageBox.Show("비밀번호를 입력해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    MessageBox.Show("비밀번호를 입력해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     return;
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("사용자 권한을 선택해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                MessageBox.Show("사용자 권한을 선택해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 return;
                             }
                         }
                         else
                         {
-                            MessageBox.Show("사용자 이름을 입력해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("사용자 이름을 입력해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
                     }
                     else
                     {
-                        MessageBox.Show("사원번호를 입력해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("사원번호를 입력해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "알림");
+                    MessageBox.Show(ex.Message, "Notification");
                     return;
                 }
                 finally
@@ -199,13 +197,13 @@ namespace ReflowCoolingSystem
         {            
             if (textBoxChangeId.Text == "")
             {
-                MessageBox.Show("수정 할 사용자를 선택해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("수정 할 사용자를 선택해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
             if ((Define.UserId != textBoxChangeId.Text) && (textBoxDeleteLevel.Text == "Master"))
             {
-                MessageBox.Show("마스터 권한의 다른 사용자 정보는 수정 할 수 없습니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("마스터 권한의 다른 사용자 정보는 수정 할 수 없습니다.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -377,29 +375,29 @@ namespace ReflowCoolingSystem
                                 cmd.CommandText = sql;
                                 cmd.ExecuteNonQuery();
 
-                                MessageBox.Show("사용자 수정을 완료했습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show("사용자 수정을 완료했습니다.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             else
                             {
-                                MessageBox.Show("비밀번호를 입력해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                MessageBox.Show("비밀번호를 입력해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 return;
                             }
                         }
                         else
                         {
-                            MessageBox.Show("사용자 권한을 선택해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("사용자 권한을 선택해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
                     }
                     else
                     {
-                        MessageBox.Show("사원번호를 입력해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("사원번호를 입력해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "알림");
+                    MessageBox.Show(ex.Message, "Notification");
                     return;
                 }
                 finally
@@ -474,7 +472,7 @@ namespace ReflowCoolingSystem
         {
             if (textBoxDeleteId.Text == "")
             {
-                MessageBox.Show("삭제 할 사용자를 선택해주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("삭제 할 사용자를 선택해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             
@@ -487,7 +485,7 @@ namespace ReflowCoolingSystem
                 {                    
                     if (textBoxDeleteLevel.Text == "Master")
                     {
-                        MessageBox.Show("마스터 권한은 삭제할 수 없습니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("마스터 권한은 삭제할 수 없습니다.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                     else
@@ -497,12 +495,12 @@ namespace ReflowCoolingSystem
                         cmd.CommandText = sql;
                         cmd.ExecuteNonQuery();
 
-                        MessageBox.Show("사용자 삭제를 완료했습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("사용자 삭제를 완료했습니다.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "알림");
+                    MessageBox.Show(ex.Message, "Notification");
                     return;
                 }
                 finally
@@ -577,7 +575,7 @@ namespace ReflowCoolingSystem
             }
             catch (Exception)
             {
-                //MessageBox.Show("셀을 올바르게 선택해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("셀을 올바르게 선택해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }    
     }

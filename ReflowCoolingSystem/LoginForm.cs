@@ -20,8 +20,8 @@ namespace ReflowCoolingSystem
         
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            Width = 1766;
-            Height = 880;
+            Width = 1172;
+            Height = 824;
             Top = 0;
             Left = 0;
 
@@ -68,7 +68,7 @@ namespace ReflowCoolingSystem
                 }
                 catch (OleDbException ex)
                 {
-                    MessageBox.Show(ex.Message, "알림");
+                    MessageBox.Show(ex.Message, "Notification");
                 }
                 finally
                 {
@@ -105,7 +105,7 @@ namespace ReflowCoolingSystem
                 }
                 catch (OleDbException ex)
                 {
-                    MessageBox.Show(ex.Message, "알림");
+                    MessageBox.Show(ex.Message, "Notification");
                 }
                 finally
                 {
@@ -176,14 +176,14 @@ namespace ReflowCoolingSystem
                     }
                     else
                     {
-                        MessageBox.Show("사원번호 또는 비밀번호를 확인해주세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("사원번호 또는 비밀번호를 확인해주세요.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                     reader.Close();
                 }
                 catch (OleDbException ex)
                 {
-                    MessageBox.Show(ex.Message, "알림");
+                    MessageBox.Show(ex.Message, "Notification");
                 }
                 finally
                 {

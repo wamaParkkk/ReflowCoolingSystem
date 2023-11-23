@@ -1,0 +1,61 @@
+[2023-06-29, 10:03:38] Start the air blow setup
+[2023-06-29, 10:03:38] Loading registered device
+[2023-06-29, 10:03:41] Loading process recipe file
+[2023-06-29, 10:03:41] Failed to read recipe file
+[2023-06-29, 10:03:41] Process has stopped : Abort
+[2023-06-29, 10:03:47] [LOG-IN] [000000_Amkor_Master]
+[2023-06-29, 10:10:04] Start the air blow setup
+[2023-06-29, 10:10:04] Loading registered device
+[2023-06-29, 10:10:26] Start the air blow setup
+[2023-06-29, 10:10:26] Loading registered device
+[2023-06-29, 10:10:29] Loading process recipe file
+[2023-06-29, 10:10:29] Failed to read recipe file
+[2023-06-29, 10:10:29] Process has stopped : Abort
+[2023-06-29, 10:10:30] [LOG-IN] [000000_Amkor_Master]
+[2023-06-29, 10:51:54] Start the air blow setup
+[2023-06-29, 10:51:54] Loading registered device
+[2023-06-29, 10:51:56] Loading process recipe file
+[2023-06-29, 10:51:56] Failed to read recipe file
+[2023-06-29, 10:51:56] Process has stopped : Abort
+[2023-06-29, 10:52:00] [LOG-IN] [000000_Amkor_Master]
+[2023-06-29, 10:52:20] Start the air blow setup
+[2023-06-29, 10:52:20] Loading registered device
+[2023-06-29, 10:52:22] Loading process recipe file
+[2023-06-29, 10:52:22] Failed to read recipe file
+[2023-06-29, 10:52:22] Process has stopped : Abort
+[2023-06-29, 10:52:23] [LOG-IN] [000000_Amkor_Master]
+[2023-06-29, 10:53:10] Start the air blow setup
+[2023-06-29, 10:53:10] Loading registered device
+[2023-06-29, 10:53:13] Loading process recipe file
+[2023-06-29, 10:53:13] Failed to read recipe file
+[2023-06-29, 10:53:13] Process has stopped : Abort
+[2023-06-29, 10:53:13] [LOG-IN] [000000_Amkor_Master]
+[2023-06-29, 10:53:42] Start the air blow setup
+[2023-06-29, 10:53:42] Loading registered device
+[2023-06-29, 10:53:45] Loading process recipe file
+[2023-06-29, 10:53:45] Failed to read recipe file
+[2023-06-29, 10:53:45] Process has stopped : Abort
+[2023-06-29, 10:53:45] [LOG-IN] [000000_Amkor_Master]
+[2023-06-29, 10:54:38] Start the air blow setup
+[2023-06-29, 10:54:38] Loading registered device
+[2023-06-29, 10:54:41] Loading process recipe file
+[2023-06-29, 10:54:41] Failed to read recipe file
+[2023-06-29, 10:54:41] Process has stopped : Abort
+[2023-06-29, 10:54:41] [LOG-IN] [000000_Amkor_Master]
+[2023-06-29, 10:55:07] Start the air blow setup
+[2023-06-29, 10:55:07] Loading registered device
+[2023-06-29, 10:55:10] Loading process recipe file
+[2023-06-29, 10:55:10] Failed to read recipe file
+[2023-06-29, 10:55:10] Process has stopped : Abort
+[2023-06-29, 10:55:41] Start the air blow setup
+[2023-06-29, 10:55:41] Loading registered device
+[2023-06-29, 10:55:44] Loading process recipe file
+[2023-06-29, 10:55:44] Failed to read recipe file
+[2023-06-29, 10:55:44] Process has stopped : Abort
+[2023-06-29, 10:55:44] [LOG-IN] [000000_Amkor_Master]
+[2023-06-29, 10:56:11] Start the air blow setup
+[2023-06-29, 10:56:11] Loading registered device
+[2023-06-29, 10:56:14] [LOG-IN] [000000_Amkor_Master]
+[2023-06-29, 10:56:14] Loading process recipe file
+[2023-06-29, 10:56:14] Failed to read recipe file
+[2023-06-29, 10:56:14] Process has stopped : Abort

@@ -53,7 +53,7 @@
             this.textBoxName.Enabled = false;
             this.textBoxName.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.textBoxName.Location = new System.Drawing.Point(780, 438);
+            this.textBoxName.Location = new System.Drawing.Point(518, 440);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(193, 29);
             this.textBoxName.TabIndex = 23;
@@ -66,7 +66,7 @@
             this.comboBoxId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxId.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxId.FormattingEnabled = true;
-            this.comboBoxId.Location = new System.Drawing.Point(780, 396);
+            this.comboBoxId.Location = new System.Drawing.Point(518, 398);
             this.comboBoxId.Name = "comboBoxId";
             this.comboBoxId.Size = new System.Drawing.Size(193, 29);
             this.comboBoxId.Sorted = true;
@@ -78,7 +78,7 @@
             this.textBoxPassword.BackColor = System.Drawing.Color.White;
             this.textBoxPassword.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.textBoxPassword.Location = new System.Drawing.Point(780, 522);
+            this.textBoxPassword.Location = new System.Drawing.Point(518, 524);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(193, 29);
             this.textBoxPassword.TabIndex = 21;
@@ -90,7 +90,7 @@
             // pnlNavi
             // 
             this.pnlNavi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.pnlNavi.Location = new System.Drawing.Point(773, 396);
+            this.pnlNavi.Location = new System.Drawing.Point(511, 398);
             this.pnlNavi.Name = "pnlNavi";
             this.pnlNavi.Size = new System.Drawing.Size(3, 30);
             this.pnlNavi.TabIndex = 24;
@@ -98,7 +98,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.panel1.Location = new System.Drawing.Point(773, 522);
+            this.panel1.Location = new System.Drawing.Point(511, 524);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(3, 30);
             this.panel1.TabIndex = 25;
@@ -108,7 +108,7 @@
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lbltitle.Location = new System.Drawing.Point(787, 178);
+            this.lbltitle.Location = new System.Drawing.Point(525, 180);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(186, 37);
             this.lbltitle.TabIndex = 27;
@@ -124,7 +124,7 @@
             this.btnLogin.ForeColor = System.Drawing.Color.Navy;
             this.btnLogin.ImageIndex = 0;
             this.btnLogin.ImageList = this.imageList;
-            this.btnLogin.Location = new System.Drawing.Point(828, 575);
+            this.btnLogin.Location = new System.Drawing.Point(566, 577);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(100, 42);
             this.btnLogin.TabIndex = 28;
@@ -145,7 +145,7 @@
             this.textBoxLevel.Enabled = false;
             this.textBoxLevel.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.textBoxLevel.Location = new System.Drawing.Point(780, 480);
+            this.textBoxLevel.Location = new System.Drawing.Point(518, 482);
             this.textBoxLevel.Name = "textBoxLevel";
             this.textBoxLevel.Size = new System.Drawing.Size(193, 29);
             this.textBoxLevel.TabIndex = 29;
@@ -155,7 +155,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ReflowCoolingSystem.Properties.Resources._lock;
-            this.pictureBox3.Location = new System.Drawing.Point(737, 522);
+            this.pictureBox3.Location = new System.Drawing.Point(475, 524);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(33, 33);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -165,7 +165,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ReflowCoolingSystem.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(739, 396);
+            this.pictureBox2.Location = new System.Drawing.Point(477, 398);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -175,7 +175,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ReflowCoolingSystem.Properties.Resources.loginGroup;
-            this.pictureBox1.Location = new System.Drawing.Point(828, 261);
+            this.pictureBox1.Location = new System.Drawing.Point(566, 263);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -187,7 +187,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1766, 880);
+            this.ClientSize = new System.Drawing.Size(1172, 824);
             this.Controls.Add(this.textBoxLevel);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lbltitle);

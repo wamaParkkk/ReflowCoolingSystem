@@ -35,6 +35,7 @@ namespace ReflowCoolingSystem
             // 
             // displayTimer
             // 
+            this.displayTimer.Interval = 500;
             this.displayTimer.Tick += new System.EventHandler(this.dispalyTimer_Tick);
             // 
             // MaintnanceForm
@@ -42,7 +43,7 @@ namespace ReflowCoolingSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1766, 880);
+            this.ClientSize = new System.Drawing.Size(1172, 824);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MaintnanceForm";
             this.Text = "MaintnanceForm";

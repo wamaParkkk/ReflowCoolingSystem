@@ -1,0 +1,20 @@
+[2023-05-23, 08:37:26] Start the air blow setup
+[2023-05-23, 08:37:26] Loading registered device
+[2023-05-23, 08:37:29] Loading process recipe file
+[2023-05-23, 08:37:29] Recipe file was successfully read : Test2.csv
+[2023-05-23, 08:37:39] [LOG-IN] [000000_Amkor_Master]
+[2023-05-23, 08:41:30] Start the air blow setup
+[2023-05-23, 08:41:30] Loading registered device
+[2023-05-23, 08:41:33] Loading process recipe file
+[2023-05-23, 08:41:33] [LOG-IN] [000000_Amkor_Master]
+[2023-05-23, 08:41:33] Recipe file was successfully read : Test2.csv
+[2023-05-23, 08:44:10] Start the air blow setup
+[2023-05-23, 08:44:10] Loading registered device
+[2023-05-23, 08:44:13] Loading process recipe file
+[2023-05-23, 08:44:13] Recipe file was successfully read : Test2.csv
+[2023-05-23, 08:44:25] [LOG-IN] [000000_Amkor_Master]
+[2023-05-23, 08:46:45] Start the air blow setup
+[2023-05-23, 08:46:45] Loading registered device
+[2023-05-23, 08:46:48] Loading process recipe file
+[2023-05-23, 08:46:48] Recipe file was successfully read : Test2.csv
+[2023-05-23, 08:46:49] [LOG-IN] [000000_Amkor_Master]

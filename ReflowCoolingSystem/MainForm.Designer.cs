@@ -35,7 +35,9 @@ namespace ReflowCoolingSystem
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxEventLog = new System.Windows.Forms.PictureBox();
+            this.pictureBoxBuzzer = new System.Windows.Forms.PictureBox();
             this.btnEventLog = new System.Windows.Forms.Button();
             this.pictureBoxUserRegist = new System.Windows.Forms.PictureBox();
             this.btnUserRegist = new System.Windows.Forms.Button();
@@ -47,27 +49,33 @@ namespace ReflowCoolingSystem
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
             this.pictureBoxConfigure = new System.Windows.Forms.PictureBox();
+            this.btnConfigure = new System.Windows.Forms.Button();
+            this.pictureBoxRecipe = new System.Windows.Forms.PictureBox();
+            this.btnRecipe = new System.Windows.Forms.Button();
+            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
             this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.btnMaintnance = new System.Windows.Forms.Button();
-            this.btnConfigure = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBoxUserGuide = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEventLog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBuzzer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserRegist)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfigure)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRecipe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserGuide)).BeginInit();
             this.SuspendLayout();
             // 
             // timerDisplay
@@ -82,7 +90,7 @@ namespace ReflowCoolingSystem
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1920, 100);
+            this.panel1.Size = new System.Drawing.Size(1280, 100);
             this.panel1.TabIndex = 31;
             // 
             // panel4
@@ -90,7 +98,7 @@ namespace ReflowCoolingSystem
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Location = new System.Drawing.Point(275, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1647, 100);
+            this.panel4.Size = new System.Drawing.Size(1005, 100);
             this.panel4.TabIndex = 1;
             // 
             // panel5
@@ -98,7 +106,10 @@ namespace ReflowCoolingSystem
             this.panel5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Controls.Add(this.pictureBoxUserGuide);
+            this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.pictureBoxEventLog);
+            this.panel5.Controls.Add(this.pictureBoxBuzzer);
             this.panel5.Controls.Add(this.btnEventLog);
             this.panel5.Controls.Add(this.pictureBoxUserRegist);
             this.panel5.Controls.Add(this.btnUserRegist);
@@ -109,8 +120,20 @@ namespace ReflowCoolingSystem
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1647, 100);
+            this.panel5.Size = new System.Drawing.Size(1005, 100);
             this.panel5.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(392, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 14);
+            this.label1.TabIndex = 158;
+            this.label1.Text = "Buzzer off";
             // 
             // pictureBoxEventLog
             // 
@@ -124,6 +147,19 @@ namespace ReflowCoolingSystem
             this.pictureBoxEventLog.TabIndex = 156;
             this.pictureBoxEventLog.TabStop = false;
             this.pictureBoxEventLog.Click += new System.EventHandler(this.btnEventLog_Click);
+            // 
+            // pictureBoxBuzzer
+            // 
+            this.pictureBoxBuzzer.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxBuzzer.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.buzzer;
+            this.pictureBoxBuzzer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxBuzzer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxBuzzer.Location = new System.Drawing.Point(401, 29);
+            this.pictureBoxBuzzer.Name = "pictureBoxBuzzer";
+            this.pictureBoxBuzzer.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxBuzzer.TabIndex = 157;
+            this.pictureBoxBuzzer.TabStop = false;
+            this.pictureBoxBuzzer.Click += new System.EventHandler(this.pictureBoxBuzzer_Click);
             // 
             // btnEventLog
             // 
@@ -182,7 +218,7 @@ namespace ReflowCoolingSystem
             this.laUserLevel.BackColor = System.Drawing.Color.Transparent;
             this.laUserLevel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.laUserLevel.ForeColor = System.Drawing.Color.Yellow;
-            this.laUserLevel.Location = new System.Drawing.Point(1452, 17);
+            this.laUserLevel.Location = new System.Drawing.Point(896, 17);
             this.laUserLevel.Name = "laUserLevel";
             this.laUserLevel.Size = new System.Drawing.Size(17, 14);
             this.laUserLevel.TabIndex = 151;
@@ -207,7 +243,7 @@ namespace ReflowCoolingSystem
             this.laTime.BackColor = System.Drawing.Color.Transparent;
             this.laTime.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.laTime.ForeColor = System.Drawing.SystemColors.Window;
-            this.laTime.Location = new System.Drawing.Point(1452, 57);
+            this.laTime.Location = new System.Drawing.Point(896, 57);
             this.laTime.Name = "laTime";
             this.laTime.Size = new System.Drawing.Size(63, 14);
             this.laTime.TabIndex = 148;
@@ -219,7 +255,7 @@ namespace ReflowCoolingSystem
             this.laDate.BackColor = System.Drawing.Color.Transparent;
             this.laDate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.laDate.ForeColor = System.Drawing.SystemColors.Window;
-            this.laDate.Location = new System.Drawing.Point(1452, 37);
+            this.laDate.Location = new System.Drawing.Point(896, 37);
             this.laDate.Name = "laDate";
             this.laDate.Size = new System.Drawing.Size(79, 14);
             this.laDate.TabIndex = 147;
@@ -248,9 +284,9 @@ namespace ReflowCoolingSystem
             // 
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 980);
+            this.panel9.Location = new System.Drawing.Point(0, 924);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1920, 100);
+            this.panel9.Size = new System.Drawing.Size(1280, 100);
             this.panel9.TabIndex = 38;
             // 
             // panel10
@@ -258,29 +294,18 @@ namespace ReflowCoolingSystem
             this.panel10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel10.Controls.Add(this.pictureBoxExit);
             this.panel10.Controls.Add(this.pictureBoxConfigure);
+            this.panel10.Controls.Add(this.btnConfigure);
+            this.panel10.Controls.Add(this.pictureBoxRecipe);
+            this.panel10.Controls.Add(this.btnRecipe);
+            this.panel10.Controls.Add(this.pictureBoxExit);
             this.panel10.Controls.Add(this.pictureBoxMain);
             this.panel10.Controls.Add(this.btnMaintnance);
-            this.panel10.Controls.Add(this.btnConfigure);
             this.panel10.Controls.Add(this.btnExit);
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1920, 106);
+            this.panel10.Size = new System.Drawing.Size(1286, 106);
             this.panel10.TabIndex = 34;
-            // 
-            // pictureBoxExit
-            // 
-            this.pictureBoxExit.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxExit.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.ExitButton;
-            this.pictureBoxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxExit.Location = new System.Drawing.Point(1580, 46);
-            this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(42, 42);
-            this.pictureBoxExit.TabIndex = 39;
-            this.pictureBoxExit.TabStop = false;
-            this.pictureBoxExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pictureBoxConfigure
             // 
@@ -288,12 +313,74 @@ namespace ReflowCoolingSystem
             this.pictureBoxConfigure.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.ConfigButton;
             this.pictureBoxConfigure.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxConfigure.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxConfigure.Location = new System.Drawing.Point(908, 46);
+            this.pictureBoxConfigure.Location = new System.Drawing.Point(684, 45);
             this.pictureBoxConfigure.Name = "pictureBoxConfigure";
             this.pictureBoxConfigure.Size = new System.Drawing.Size(42, 42);
-            this.pictureBoxConfigure.TabIndex = 37;
+            this.pictureBoxConfigure.TabIndex = 43;
             this.pictureBoxConfigure.TabStop = false;
             this.pictureBoxConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
+            // 
+            // btnConfigure
+            // 
+            this.btnConfigure.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfigure.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnConfigure.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfigure.FlatAppearance.BorderSize = 0;
+            this.btnConfigure.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConfigure.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfigure.ForeColor = System.Drawing.Color.White;
+            this.btnConfigure.Location = new System.Drawing.Point(725, 45);
+            this.btnConfigure.Name = "btnConfigure";
+            this.btnConfigure.Size = new System.Drawing.Size(111, 42);
+            this.btnConfigure.TabIndex = 42;
+            this.btnConfigure.Text = "Configure";
+            this.btnConfigure.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnConfigure.UseVisualStyleBackColor = false;
+            this.btnConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
+            // 
+            // pictureBoxRecipe
+            // 
+            this.pictureBoxRecipe.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxRecipe.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.RecipeButton;
+            this.pictureBoxRecipe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxRecipe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxRecipe.Location = new System.Drawing.Point(526, 45);
+            this.pictureBoxRecipe.Name = "pictureBoxRecipe";
+            this.pictureBoxRecipe.Size = new System.Drawing.Size(42, 42);
+            this.pictureBoxRecipe.TabIndex = 41;
+            this.pictureBoxRecipe.TabStop = false;
+            this.pictureBoxRecipe.Click += new System.EventHandler(this.btnRecipe_Click);
+            // 
+            // btnRecipe
+            // 
+            this.btnRecipe.BackColor = System.Drawing.Color.Transparent;
+            this.btnRecipe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRecipe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRecipe.FlatAppearance.BorderSize = 0;
+            this.btnRecipe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRecipe.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecipe.ForeColor = System.Drawing.Color.White;
+            this.btnRecipe.Location = new System.Drawing.Point(567, 45);
+            this.btnRecipe.Name = "btnRecipe";
+            this.btnRecipe.Size = new System.Drawing.Size(111, 42);
+            this.btnRecipe.TabIndex = 40;
+            this.btnRecipe.Text = "Recipe";
+            this.btnRecipe.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnRecipe.UseVisualStyleBackColor = false;
+            this.btnRecipe.Click += new System.EventHandler(this.btnRecipe_Click);
+            // 
+            // pictureBoxExit
+            // 
+            this.pictureBoxExit.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxExit.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.ExitButton;
+            this.pictureBoxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxExit.Location = new System.Drawing.Point(962, 45);
+            this.pictureBoxExit.Name = "pictureBoxExit";
+            this.pictureBoxExit.Size = new System.Drawing.Size(42, 42);
+            this.pictureBoxExit.TabIndex = 39;
+            this.pictureBoxExit.TabStop = false;
+            this.pictureBoxExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pictureBoxMain
             // 
@@ -301,7 +388,7 @@ namespace ReflowCoolingSystem
             this.pictureBoxMain.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Maint;
             this.pictureBoxMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMain.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxMain.Location = new System.Drawing.Point(750, 46);
+            this.pictureBoxMain.Location = new System.Drawing.Point(368, 45);
             this.pictureBoxMain.Name = "pictureBoxMain";
             this.pictureBoxMain.Size = new System.Drawing.Size(42, 42);
             this.pictureBoxMain.TabIndex = 35;
@@ -317,7 +404,7 @@ namespace ReflowCoolingSystem
             this.btnMaintnance.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMaintnance.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaintnance.ForeColor = System.Drawing.Color.White;
-            this.btnMaintnance.Location = new System.Drawing.Point(791, 46);
+            this.btnMaintnance.Location = new System.Drawing.Point(409, 45);
             this.btnMaintnance.Name = "btnMaintnance";
             this.btnMaintnance.Size = new System.Drawing.Size(111, 42);
             this.btnMaintnance.TabIndex = 33;
@@ -325,24 +412,6 @@ namespace ReflowCoolingSystem
             this.btnMaintnance.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnMaintnance.UseVisualStyleBackColor = false;
             this.btnMaintnance.Click += new System.EventHandler(this.btnMain_Click);
-            // 
-            // btnConfigure
-            // 
-            this.btnConfigure.BackColor = System.Drawing.Color.Transparent;
-            this.btnConfigure.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnConfigure.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConfigure.FlatAppearance.BorderSize = 0;
-            this.btnConfigure.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConfigure.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfigure.ForeColor = System.Drawing.Color.White;
-            this.btnConfigure.Location = new System.Drawing.Point(949, 46);
-            this.btnConfigure.Name = "btnConfigure";
-            this.btnConfigure.Size = new System.Drawing.Size(111, 42);
-            this.btnConfigure.TabIndex = 34;
-            this.btnConfigure.Text = "Configure";
-            this.btnConfigure.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnConfigure.UseVisualStyleBackColor = false;
-            this.btnConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
             // 
             // btnExit
             // 
@@ -354,7 +423,7 @@ namespace ReflowCoolingSystem
             this.btnExit.Font = new System.Drawing.Font("Nirmala UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(1621, 46);
+            this.btnExit.Location = new System.Drawing.Point(1003, 45);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(111, 42);
             this.btnExit.TabIndex = 31;
@@ -367,9 +436,9 @@ namespace ReflowCoolingSystem
             // 
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(1788, 100);
+            this.panel7.Location = new System.Drawing.Point(1194, 100);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(132, 880);
+            this.panel7.Size = new System.Drawing.Size(86, 824);
             this.panel7.TabIndex = 40;
             // 
             // panel8
@@ -379,7 +448,7 @@ namespace ReflowCoolingSystem
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(132, 880);
+            this.panel8.Size = new System.Drawing.Size(86, 824);
             this.panel8.TabIndex = 41;
             // 
             // panel6
@@ -389,15 +458,28 @@ namespace ReflowCoolingSystem
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 100);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(22, 880);
+            this.panel6.Size = new System.Drawing.Size(22, 824);
             this.panel6.TabIndex = 39;
+            // 
+            // pictureBoxUserGuide
+            // 
+            this.pictureBoxUserGuide.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxUserGuide.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.UserGuide;
+            this.pictureBoxUserGuide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxUserGuide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxUserGuide.Location = new System.Drawing.Point(797, 29);
+            this.pictureBoxUserGuide.Name = "pictureBoxUserGuide";
+            this.pictureBoxUserGuide.Size = new System.Drawing.Size(42, 42);
+            this.pictureBoxUserGuide.TabIndex = 159;
+            this.pictureBoxUserGuide.TabStop = false;
+            this.pictureBoxUserGuide.Click += new System.EventHandler(this.pictureBoxUserGuide_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1280, 1024);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel9);
@@ -408,21 +490,23 @@ namespace ReflowCoolingSystem
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.Text = "Resistance Measurement System";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEventLog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBuzzer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserRegist)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfigure)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRecipe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserGuide)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -440,10 +524,8 @@ namespace ReflowCoolingSystem
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBoxExit;
-        private System.Windows.Forms.PictureBox pictureBoxConfigure;
         private System.Windows.Forms.PictureBox pictureBoxMain;
         private System.Windows.Forms.Button btnMaintnance;
-        private System.Windows.Forms.Button btnConfigure;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
@@ -453,5 +535,12 @@ namespace ReflowCoolingSystem
         private System.Windows.Forms.Button btnUserRegist;
         private System.Windows.Forms.PictureBox pictureBoxEventLog;
         private System.Windows.Forms.Button btnEventLog;
+        private System.Windows.Forms.PictureBox pictureBoxRecipe;
+        private System.Windows.Forms.Button btnRecipe;
+        private System.Windows.Forms.PictureBox pictureBoxConfigure;
+        private System.Windows.Forms.Button btnConfigure;
+        private System.Windows.Forms.PictureBox pictureBoxBuzzer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBoxUserGuide;
     }
 }

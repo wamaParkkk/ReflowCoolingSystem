@@ -27,6 +27,8 @@ namespace ReflowCoolingSystem
 
         private void MaintnanceForm_Activated(object sender, EventArgs e)
         {
+            Width = 1172;
+            Height = 824;
             Top = 0;
             Left = 0;
 

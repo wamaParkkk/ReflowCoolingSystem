@@ -1,0 +1,176 @@
+[2023-06-30, 09:25:54] Could not do the open the driver
+[2023-06-30, 09:26:29] AxaIsAOModule() Error!!
+[2023-06-30, 09:26:29] AxaIsAOModule() Error!!
+[2023-06-30, 09:26:29] AxaIsAOModule() Error!!
+[2023-06-30, 09:26:30] Could not do the open the driver
+[2023-06-30, 09:58:58] Could not do the open the driver
+[2023-06-30, 09:59:07] AxaIsAOModule() Error!!
+[2023-06-30, 09:59:07] AxaIsAOModule() Error!!
+[2023-06-30, 09:59:07] AxaIsAOModule() Error!!
+[2023-06-30, 09:59:30] Could not do the open the driver
+[2023-06-30, 09:59:42] AxaIsAOModule() Error!!
+[2023-06-30, 09:59:44] AxaIsAOModule() Error!!
+[2023-06-30, 10:31:30] Could not do the open the driver
+[2023-06-30, 10:31:36] AxaIsAOModule() Error!!
+[2023-06-30, 10:31:36] AxaIsAOModule() Error!!
+[2023-06-30, 10:31:36] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:30] Could not do the open the driver
+[2023-06-30, 10:32:39] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:39] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:39] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:39] Could not do the open the driver
+[2023-06-30, 10:32:45] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:47] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:48] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:48] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:49] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:49] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:50] AxaIsAOModule() Error!!
+[2023-06-30, 10:32:50] AxaIsAOModule() Error!!
+[2023-06-30, 10:55:11] AxaIsAOModule() Error!!
+[2023-06-30, 10:55:11] AxaIsAOModule() Error!!
+[2023-06-30, 10:55:11] AxaIsAOModule() Error!!
+[2023-06-30, 12:02:57] AxaIsAOModule() Error!!
+[2023-06-30, 12:02:57] AxaIsAOModule() Error!!
+[2023-06-30, 12:02:57] AxaIsAOModule() Error!!
+[2023-06-30, 15:58:53] Could not do the open the driver
+[2023-06-30, 15:59:02] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:02] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:02] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:03] Could not do the open the driver
+[2023-06-30, 15:59:32] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:32] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:32] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:32] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:33] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:33] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:33] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:33] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-30.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 15:59:34] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:19] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:20] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:20] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:21] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:21] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:21] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:22] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:23] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:23] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:24] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:25] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:25] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:26] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:27] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:27] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:27] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:27] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:27] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:28] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:28] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:30] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:33] AxaIsAOModule() Error!!
+[2023-06-30, 16:00:35] AxaIsAOModule() Error!!

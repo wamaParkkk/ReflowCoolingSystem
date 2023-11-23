@@ -13,11 +13,11 @@ namespace ReflowCoolingSystem
 
         private void EventLogForm_Load(object sender, EventArgs e)
         {
-            Width = 1766;
-            Height = 880;
+            Width = 1172;
+            Height = 824;
             Top = 0;
             Left = 0;
-            
+
             LoadDirectory(Global.logfilePath);
         }
 

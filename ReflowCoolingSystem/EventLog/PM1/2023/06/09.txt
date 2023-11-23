@@ -1,0 +1,16 @@
+[2023-06-09, 14:30:26] Start the air blow setup
+[2023-06-09, 14:30:26] Loading registered device
+[2023-06-09, 14:30:28] [LOG-IN] [000000_Amkor_Master]
+[2023-06-09, 14:30:28] Loading process recipe file
+[2023-06-09, 14:30:28] Failed to read recipe file
+[2023-06-09, 14:30:28] Process has stopped : Abort
+[2023-06-09, 14:30:49] Start the air blow setup
+[2023-06-09, 14:30:49] Start the air blow setup
+[2023-06-09, 14:30:49] Loading registered device
+[2023-06-09, 14:30:49] Loading registered device
+[2023-06-09, 14:30:52] Loading process recipe file
+[2023-06-09, 14:30:52] Recipe file was successfully read : Test1.csv
+[2023-06-09, 14:30:52] Loading process recipe file
+[2023-06-09, 14:30:52] Recipe file was successfully read : Test1.csv
+[2023-06-09, 14:30:57] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2023-06-09.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2023-06-09, 14:30:57] Process has stopped : Abort

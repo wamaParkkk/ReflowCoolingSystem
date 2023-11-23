@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -7,7 +8,8 @@ namespace ReflowCoolingSystem
     public partial class MainForm : Form
     {
         LoginForm m_loginForm;        
-        MaintnanceForm m_maintnanceForm;        
+        MaintnanceForm m_maintnanceForm;
+        RecipeForm m_recipeForm;
         ConfigureForm m_configureForm;                
         EventLogForm m_eventLogForm;
         UserRegistForm m_userRegistForm;
@@ -27,8 +29,8 @@ namespace ReflowCoolingSystem
         
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Width = 1920;
-            Height = 1080;
+            Width = 1280;
+            Height = 1024;
             Top = 0;
             Left = 0;
 
@@ -51,7 +53,7 @@ namespace ReflowCoolingSystem
 
             SubFormShow((byte)Page.LogInPage);
 
-            F_ButtonVisible(false, false, false, false);
+            F_ButtonVisible(false, false, false, false, false);
         }
 
         public class MyNativeWindows : NativeWindow
@@ -76,37 +78,38 @@ namespace ReflowCoolingSystem
                 }
                 base.WndProc(ref m);
             }
-        }
-
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            timerDisplay.Enabled = false;            
-
-            FreeThread();
-
-            Dispose();
-        }
+        }        
 
         private void SubFormCreate()
         {            
             m_loginForm = new LoginForm();
             m_loginForm.MdiParent = this;
+            m_loginForm.Dock = DockStyle.Fill;
             m_loginForm.Show();
 
             m_userRegistForm = new UserRegistForm();
             m_userRegistForm.MdiParent = this;
+            m_userRegistForm.Dock = DockStyle.Fill;
             m_userRegistForm.Show();
 
             m_maintnanceForm = new MaintnanceForm();
             m_maintnanceForm.MdiParent = this;
-            m_maintnanceForm.Show();            
+            m_maintnanceForm.Dock = DockStyle.Fill;
+            m_maintnanceForm.Show();
+
+            m_recipeForm = new RecipeForm();
+            m_recipeForm.MdiParent = this;
+            m_recipeForm.Dock = DockStyle.Fill;
+            m_recipeForm.Show();
 
             m_configureForm = new ConfigureForm();
             m_configureForm.MdiParent = this;
+            m_configureForm.Dock = DockStyle.Fill;
             m_configureForm.Show();                        
 
             m_eventLogForm = new EventLogForm();
             m_eventLogForm.MdiParent = this;
+            m_eventLogForm.Dock = DockStyle.Fill;
             m_eventLogForm.Show();
         }
 
@@ -117,7 +120,7 @@ namespace ReflowCoolingSystem
 
         private void FreeThread()
         {
-            cooling.Dispose();
+            cooling.Dispose();            
         }
 
         public void SubFormShow(byte PageNum)
@@ -141,7 +144,14 @@ namespace ReflowCoolingSystem
                             m_maintnanceForm.Activate();
                             m_maintnanceForm.BringToFront();                            
                         }
-                        break;                    
+                        break;
+
+                    case (byte)Page.RecipePage:
+                        {
+                            m_recipeForm.Activate();
+                            m_recipeForm.BringToFront();                            
+                        }
+                        break;
 
                     case (byte)Page.ConfigurePage:
                         {
@@ -167,17 +177,20 @@ namespace ReflowCoolingSystem
             }
             catch
             {
-                MessageBox.Show("폼 양식을 가져오는 도중 오류가 발생했습니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("폼 양식을 가져오는 도중 오류가 발생했습니다.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void F_ButtonVisible(bool bMaintBtn, bool bConfigureBtn, bool bEventLogBtn, bool bUserRegistBtn)
+        private void F_ButtonVisible(bool bMaintBtn, bool bRecipeBtn, bool bConfigureBtn, bool bEventLogBtn, bool bUserRegistBtn)
         {            
             pictureBoxMain.Enabled = bMaintBtn;
-            btnMaintnance.Enabled = bMaintBtn;            
+            btnMaintnance.Enabled = bMaintBtn;
+
+            pictureBoxRecipe.Enabled = bRecipeBtn;
+            btnRecipe.Enabled = bRecipeBtn;
 
             pictureBoxConfigure.Enabled = bConfigureBtn;
-            btnConfigure.Enabled = bConfigureBtn;            
+            btnConfigure.Enabled = bConfigureBtn;
 
             pictureBoxEventLog.Enabled = bEventLogBtn;
             btnEventLog.Enabled = bEventLogBtn;
@@ -189,12 +202,17 @@ namespace ReflowCoolingSystem
         private void btnMain_Click(object sender, EventArgs e)
         {
             SubFormShow((byte)Page.MaintnancePage);
-        }        
+        }
+
+        private void btnRecipe_Click(object sender, EventArgs e)
+        {
+            SubFormShow((byte)Page.RecipePage);
+        }
 
         private void btnConfigure_Click(object sender, EventArgs e)
         {
             SubFormShow((byte)Page.ConfigurePage);
-        }               
+        }
 
         private void btnEventLog_Click(object sender, EventArgs e)
         {
@@ -208,14 +226,32 @@ namespace ReflowCoolingSystem
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("프로그램을 종료 하겠습니까?", "알림", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("프로그램을 종료 하겠습니까?", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
+                timerDisplay.Enabled = false;
+
+                FreeThread();
+
+                Global.Usb_Qu_Close();
+
                 Dispose();
                 //Application.Exit();
                 Application.ExitThread();
                 Environment.Exit(0);
             }
-        }            
+        }
+
+        private void pictureBoxBuzzer_Click(object sender, EventArgs e)
+        {
+            Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
+        }
+
+        private void pictureBoxUserGuide_Click(object sender, EventArgs e)
+        {
+            String openPDFFile = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\..\Document\SW operation manual_Reflow air knife system.pdf"));
+            File.WriteAllBytes(openPDFFile, Properties.Resources.SW_operation_manual_Reflow_air_knife_system);
+            System.Diagnostics.Process.Start(openPDFFile);
+        }
 
         private void timerDisplay_Tick(object sender, EventArgs e)
         {
@@ -238,7 +274,11 @@ namespace ReflowCoolingSystem
 
                     Define.bMainActivate = false;
                 }                           
-            }            
+            }
+            else if (Define.currentPage == (byte)Page.RecipePage)
+            {
+                labelPageName.Text = "Recipe";
+            }
             else if (Define.currentPage == (byte)Page.ConfigurePage)
             {
                 labelPageName.Text = "Configure";
@@ -261,16 +301,16 @@ namespace ReflowCoolingSystem
             // User level에 따른 버튼 활성화
             if (Define.UserLevel == "Master")
             {
-                // maint, configure, eventlog, userRegist
-                F_ButtonVisible(true, true, true, true);
+                // maint, recipe, configure, eventlog, userRegist
+                F_ButtonVisible(true, true, true, true, true);
             }
             else if (Define.UserLevel == "Maintnance")
             {
-                F_ButtonVisible(true, true, true, false);
+                F_ButtonVisible(true, true, true, true, false);
             }
             else if (Define.UserLevel == "User")
             {
-                F_ButtonVisible(true, false, true, false);
+                F_ButtonVisible(true, false, false, true, false);
             }                             
         }        
     }
