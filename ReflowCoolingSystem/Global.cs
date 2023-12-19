@@ -258,6 +258,7 @@ namespace ReflowCoolingSystem
                 nWebCallCnt++;
             }       
             
+            /* 센서 없음
             // Air blow tolerance check
             if (Define.dCH1PsiSetValue > 0)
             {
@@ -381,6 +382,7 @@ namespace ReflowCoolingSystem
                         Define.bAlarm3 = false;
                 }
             }
+            */
         }
 
         private static void F_ALL_EQUIP_PARAMETER_DATA_PARSING()
@@ -433,6 +435,8 @@ namespace ReflowCoolingSystem
                     {
                         Define.ReflowState = Define.REFLOW_RUN;
                     }
+
+                    EventLog("Complete the REFLOW status init", "PM1", "Event");
 
                     break;
                 }                

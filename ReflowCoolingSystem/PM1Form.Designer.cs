@@ -40,18 +40,48 @@ namespace ReflowCoolingSystem
             this.Label_Device = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Img_PCB = new System.Windows.Forms.Panel();
-            this.Img_Zone3_4 = new System.Windows.Forms.Panel();
-            this.Img_Zone2_4 = new System.Windows.Forms.Panel();
-            this.Img_Zone3_2 = new System.Windows.Forms.Panel();
-            this.Img_Zone1_4 = new System.Windows.Forms.Panel();
-            this.Img_Zone3_3 = new System.Windows.Forms.Panel();
-            this.Img_Zone2_2 = new System.Windows.Forms.Panel();
-            this.Img_Zone3_1 = new System.Windows.Forms.Panel();
-            this.Img_Zone1_2 = new System.Windows.Forms.Panel();
-            this.Img_Zone2_3 = new System.Windows.Forms.Panel();
-            this.Img_Zone1_3 = new System.Windows.Forms.Panel();
-            this.Img_Zone2_1 = new System.Windows.Forms.Panel();
-            this.Img_Zone1_1 = new System.Windows.Forms.Panel();
+            this.label_CH3_2_70 = new System.Windows.Forms.Label();
+            this.label_CH2_2_70 = new System.Windows.Forms.Label();
+            this.label_CH3_2_40 = new System.Windows.Forms.Label();
+            this.label_CH1_2_70 = new System.Windows.Forms.Label();
+            this.label_CH3_1_70 = new System.Windows.Forms.Label();
+            this.label_CH3_2_60 = new System.Windows.Forms.Label();
+            this.label_CH2_2_40 = new System.Windows.Forms.Label();
+            this.label_CH3_1_40 = new System.Windows.Forms.Label();
+            this.label_CH1_2_40 = new System.Windows.Forms.Label();
+            this.label_CH3_2_30 = new System.Windows.Forms.Label();
+            this.label_CH2_1_70 = new System.Windows.Forms.Label();
+            this.label_CH3_1_60 = new System.Windows.Forms.Label();
+            this.label_CH2_2_60 = new System.Windows.Forms.Label();
+            this.label_CH3_2_50 = new System.Windows.Forms.Label();
+            this.label_CH1_1_70 = new System.Windows.Forms.Label();
+            this.label_CH3_1_30 = new System.Windows.Forms.Label();
+            this.label_CH2_1_40 = new System.Windows.Forms.Label();
+            this.label_CH3_2_20 = new System.Windows.Forms.Label();
+            this.label_CH1_2_60 = new System.Windows.Forms.Label();
+            this.label_CH3_1_50 = new System.Windows.Forms.Label();
+            this.label_CH2_2_30 = new System.Windows.Forms.Label();
+            this.label_CH3_2_10 = new System.Windows.Forms.Label();
+            this.label_CH1_1_40 = new System.Windows.Forms.Label();
+            this.label_CH3_1_20 = new System.Windows.Forms.Label();
+            this.label_CH2_1_60 = new System.Windows.Forms.Label();
+            this.label_CH3_1_10 = new System.Windows.Forms.Label();
+            this.label_CH1_2_30 = new System.Windows.Forms.Label();
+            this.label_CH2_2_50 = new System.Windows.Forms.Label();
+            this.label_CH1_1_60 = new System.Windows.Forms.Label();
+            this.label_CH2_1_30 = new System.Windows.Forms.Label();
+            this.label_CH1_2_50 = new System.Windows.Forms.Label();
+            this.label_CH2_2_20 = new System.Windows.Forms.Label();
+            this.label_CH1_1_30 = new System.Windows.Forms.Label();
+            this.label_CH2_1_50 = new System.Windows.Forms.Label();
+            this.label_CH1_2_20 = new System.Windows.Forms.Label();
+            this.label_CH2_2_10 = new System.Windows.Forms.Label();
+            this.label_CH1_1_50 = new System.Windows.Forms.Label();
+            this.label_CH2_1_20 = new System.Windows.Forms.Label();
+            this.label_CH1_2_10 = new System.Windows.Forms.Label();
+            this.label_CH2_1_10 = new System.Windows.Forms.Label();
+            this.label_CH1_1_20 = new System.Windows.Forms.Label();
+            this.label_CH1_1_10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -188,154 +218,430 @@ namespace ReflowCoolingSystem
             this.Img_PCB.BackColor = System.Drawing.Color.Transparent;
             this.Img_PCB.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Img_Cooler;
             this.Img_PCB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_PCB.Controls.Add(this.Img_Zone3_4);
-            this.Img_PCB.Controls.Add(this.Img_Zone2_4);
-            this.Img_PCB.Controls.Add(this.Img_Zone3_2);
-            this.Img_PCB.Controls.Add(this.Img_Zone1_4);
-            this.Img_PCB.Controls.Add(this.Img_Zone3_3);
-            this.Img_PCB.Controls.Add(this.Img_Zone2_2);
-            this.Img_PCB.Controls.Add(this.Img_Zone3_1);
-            this.Img_PCB.Controls.Add(this.Img_Zone1_2);
-            this.Img_PCB.Controls.Add(this.Img_Zone2_3);
-            this.Img_PCB.Controls.Add(this.Img_Zone1_3);
-            this.Img_PCB.Controls.Add(this.Img_Zone2_1);
-            this.Img_PCB.Controls.Add(this.Img_Zone1_1);
+            this.Img_PCB.Controls.Add(this.label_CH3_2_70);
+            this.Img_PCB.Controls.Add(this.label_CH2_2_70);
+            this.Img_PCB.Controls.Add(this.label_CH3_2_40);
+            this.Img_PCB.Controls.Add(this.label_CH1_2_70);
+            this.Img_PCB.Controls.Add(this.label_CH3_1_70);
+            this.Img_PCB.Controls.Add(this.label_CH3_2_60);
+            this.Img_PCB.Controls.Add(this.label_CH2_2_40);
+            this.Img_PCB.Controls.Add(this.label_CH3_1_40);
+            this.Img_PCB.Controls.Add(this.label_CH1_2_40);
+            this.Img_PCB.Controls.Add(this.label_CH3_2_30);
+            this.Img_PCB.Controls.Add(this.label_CH2_1_70);
+            this.Img_PCB.Controls.Add(this.label_CH3_1_60);
+            this.Img_PCB.Controls.Add(this.label_CH2_2_60);
+            this.Img_PCB.Controls.Add(this.label_CH3_2_50);
+            this.Img_PCB.Controls.Add(this.label_CH1_1_70);
+            this.Img_PCB.Controls.Add(this.label_CH3_1_30);
+            this.Img_PCB.Controls.Add(this.label_CH2_1_40);
+            this.Img_PCB.Controls.Add(this.label_CH3_2_20);
+            this.Img_PCB.Controls.Add(this.label_CH1_2_60);
+            this.Img_PCB.Controls.Add(this.label_CH3_1_50);
+            this.Img_PCB.Controls.Add(this.label_CH2_2_30);
+            this.Img_PCB.Controls.Add(this.label_CH3_2_10);
+            this.Img_PCB.Controls.Add(this.label_CH1_1_40);
+            this.Img_PCB.Controls.Add(this.label_CH3_1_20);
+            this.Img_PCB.Controls.Add(this.label_CH2_1_60);
+            this.Img_PCB.Controls.Add(this.label_CH3_1_10);
+            this.Img_PCB.Controls.Add(this.label_CH1_2_30);
+            this.Img_PCB.Controls.Add(this.label_CH2_2_50);
+            this.Img_PCB.Controls.Add(this.label_CH1_1_60);
+            this.Img_PCB.Controls.Add(this.label_CH2_1_30);
+            this.Img_PCB.Controls.Add(this.label_CH1_2_50);
+            this.Img_PCB.Controls.Add(this.label_CH2_2_20);
+            this.Img_PCB.Controls.Add(this.label_CH1_1_30);
+            this.Img_PCB.Controls.Add(this.label_CH2_1_50);
+            this.Img_PCB.Controls.Add(this.label_CH1_2_20);
+            this.Img_PCB.Controls.Add(this.label_CH2_2_10);
+            this.Img_PCB.Controls.Add(this.label_CH1_1_50);
+            this.Img_PCB.Controls.Add(this.label_CH2_1_20);
+            this.Img_PCB.Controls.Add(this.label_CH1_2_10);
+            this.Img_PCB.Controls.Add(this.label_CH2_1_10);
+            this.Img_PCB.Controls.Add(this.label_CH1_1_20);
+            this.Img_PCB.Controls.Add(this.label_CH1_1_10);
             this.Img_PCB.Location = new System.Drawing.Point(427, 285);
             this.Img_PCB.Name = "Img_PCB";
             this.Img_PCB.Size = new System.Drawing.Size(338, 185);
             this.Img_PCB.TabIndex = 519;
             // 
-            // Img_Zone3_4
+            // label_CH3_2_70
             // 
-            this.Img_Zone3_4.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone3_4.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone3_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone3_4.Location = new System.Drawing.Point(282, 125);
-            this.Img_Zone3_4.Name = "Img_Zone3_4";
-            this.Img_Zone3_4.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone3_4.TabIndex = 532;
-            this.Img_Zone3_4.Visible = false;
+            this.label_CH3_2_70.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_2_70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_2_70.Location = new System.Drawing.Point(289, 23);
+            this.label_CH3_2_70.Name = "label_CH3_2_70";
+            this.label_CH3_2_70.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_2_70.TabIndex = 583;
             // 
-            // Img_Zone2_4
+            // label_CH2_2_70
             // 
-            this.Img_Zone2_4.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone2_4.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone2_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone2_4.Location = new System.Drawing.Point(178, 125);
-            this.Img_Zone2_4.Name = "Img_Zone2_4";
-            this.Img_Zone2_4.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone2_4.TabIndex = 528;
-            this.Img_Zone2_4.Visible = false;
+            this.label_CH2_2_70.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_2_70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_2_70.Location = new System.Drawing.Point(184, 23);
+            this.label_CH2_2_70.Name = "label_CH2_2_70";
+            this.label_CH2_2_70.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_2_70.TabIndex = 583;
             // 
-            // Img_Zone3_2
+            // label_CH3_2_40
             // 
-            this.Img_Zone3_2.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone3_2.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone3_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone3_2.Location = new System.Drawing.Point(229, 125);
-            this.Img_Zone3_2.Name = "Img_Zone3_2";
-            this.Img_Zone3_2.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone3_2.TabIndex = 530;
-            this.Img_Zone3_2.Visible = false;
+            this.label_CH3_2_40.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_2_40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_2_40.Location = new System.Drawing.Point(289, 83);
+            this.label_CH3_2_40.Name = "label_CH3_2_40";
+            this.label_CH3_2_40.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_2_40.TabIndex = 580;
             // 
-            // Img_Zone1_4
+            // label_CH1_2_70
             // 
-            this.Img_Zone1_4.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone1_4.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone1_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone1_4.Location = new System.Drawing.Point(73, 125);
-            this.Img_Zone1_4.Name = "Img_Zone1_4";
-            this.Img_Zone1_4.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone1_4.TabIndex = 524;
-            this.Img_Zone1_4.Visible = false;
+            this.label_CH1_2_70.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_2_70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_2_70.Location = new System.Drawing.Point(80, 23);
+            this.label_CH1_2_70.Name = "label_CH1_2_70";
+            this.label_CH1_2_70.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_2_70.TabIndex = 569;
             // 
-            // Img_Zone3_3
+            // label_CH3_1_70
             // 
-            this.Img_Zone3_3.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone3_3.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone3_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone3_3.Location = new System.Drawing.Point(282, 25);
-            this.Img_Zone3_3.Name = "Img_Zone3_3";
-            this.Img_Zone3_3.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone3_3.TabIndex = 531;
-            this.Img_Zone3_3.Visible = false;
+            this.label_CH3_1_70.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_1_70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_1_70.Location = new System.Drawing.Point(236, 23);
+            this.label_CH3_1_70.Name = "label_CH3_1_70";
+            this.label_CH3_1_70.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_1_70.TabIndex = 576;
             // 
-            // Img_Zone2_2
+            // label_CH3_2_60
             // 
-            this.Img_Zone2_2.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone2_2.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone2_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone2_2.Location = new System.Drawing.Point(125, 125);
-            this.Img_Zone2_2.Name = "Img_Zone2_2";
-            this.Img_Zone2_2.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone2_2.TabIndex = 526;
-            this.Img_Zone2_2.Visible = false;
+            this.label_CH3_2_60.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_2_60.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_2_60.Location = new System.Drawing.Point(289, 43);
+            this.label_CH3_2_60.Name = "label_CH3_2_60";
+            this.label_CH3_2_60.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_2_60.TabIndex = 582;
             // 
-            // Img_Zone3_1
+            // label_CH2_2_40
             // 
-            this.Img_Zone3_1.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone3_1.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone3_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone3_1.Location = new System.Drawing.Point(229, 25);
-            this.Img_Zone3_1.Name = "Img_Zone3_1";
-            this.Img_Zone3_1.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone3_1.TabIndex = 529;
-            this.Img_Zone3_1.Visible = false;
+            this.label_CH2_2_40.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_2_40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_2_40.Location = new System.Drawing.Point(184, 83);
+            this.label_CH2_2_40.Name = "label_CH2_2_40";
+            this.label_CH2_2_40.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_2_40.TabIndex = 580;
             // 
-            // Img_Zone1_2
+            // label_CH3_1_40
             // 
-            this.Img_Zone1_2.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone1_2.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone1_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone1_2.Location = new System.Drawing.Point(20, 125);
-            this.Img_Zone1_2.Name = "Img_Zone1_2";
-            this.Img_Zone1_2.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone1_2.TabIndex = 522;
-            this.Img_Zone1_2.Visible = false;
+            this.label_CH3_1_40.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_1_40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_1_40.Location = new System.Drawing.Point(236, 83);
+            this.label_CH3_1_40.Name = "label_CH3_1_40";
+            this.label_CH3_1_40.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_1_40.TabIndex = 573;
             // 
-            // Img_Zone2_3
+            // label_CH1_2_40
             // 
-            this.Img_Zone2_3.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone2_3.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone2_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone2_3.Location = new System.Drawing.Point(178, 25);
-            this.Img_Zone2_3.Name = "Img_Zone2_3";
-            this.Img_Zone2_3.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone2_3.TabIndex = 527;
-            this.Img_Zone2_3.Visible = false;
+            this.label_CH1_2_40.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_2_40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_2_40.Location = new System.Drawing.Point(80, 83);
+            this.label_CH1_2_40.Name = "label_CH1_2_40";
+            this.label_CH1_2_40.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_2_40.TabIndex = 566;
             // 
-            // Img_Zone1_3
+            // label_CH3_2_30
             // 
-            this.Img_Zone1_3.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone1_3.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone1_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone1_3.Location = new System.Drawing.Point(73, 25);
-            this.Img_Zone1_3.Name = "Img_Zone1_3";
-            this.Img_Zone1_3.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone1_3.TabIndex = 523;
-            this.Img_Zone1_3.Visible = false;
+            this.label_CH3_2_30.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_2_30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_2_30.Location = new System.Drawing.Point(289, 103);
+            this.label_CH3_2_30.Name = "label_CH3_2_30";
+            this.label_CH3_2_30.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_2_30.TabIndex = 579;
             // 
-            // Img_Zone2_1
+            // label_CH2_1_70
             // 
-            this.Img_Zone2_1.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone2_1.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone2_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone2_1.Location = new System.Drawing.Point(125, 25);
-            this.Img_Zone2_1.Name = "Img_Zone2_1";
-            this.Img_Zone2_1.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone2_1.TabIndex = 525;
-            this.Img_Zone2_1.Visible = false;
+            this.label_CH2_1_70.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_1_70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_1_70.Location = new System.Drawing.Point(131, 23);
+            this.label_CH2_1_70.Name = "label_CH2_1_70";
+            this.label_CH2_1_70.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_1_70.TabIndex = 576;
             // 
-            // Img_Zone1_1
+            // label_CH3_1_60
             // 
-            this.Img_Zone1_1.BackColor = System.Drawing.Color.Transparent;
-            this.Img_Zone1_1.BackgroundImage = global::ReflowCoolingSystem.Properties.Resources.Air4;
-            this.Img_Zone1_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Img_Zone1_1.Location = new System.Drawing.Point(20, 25);
-            this.Img_Zone1_1.Name = "Img_Zone1_1";
-            this.Img_Zone1_1.Size = new System.Drawing.Size(32, 32);
-            this.Img_Zone1_1.TabIndex = 521;
-            this.Img_Zone1_1.Visible = false;
+            this.label_CH3_1_60.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_1_60.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_1_60.Location = new System.Drawing.Point(236, 43);
+            this.label_CH3_1_60.Name = "label_CH3_1_60";
+            this.label_CH3_1_60.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_1_60.TabIndex = 575;
+            // 
+            // label_CH2_2_60
+            // 
+            this.label_CH2_2_60.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_2_60.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_2_60.Location = new System.Drawing.Point(184, 43);
+            this.label_CH2_2_60.Name = "label_CH2_2_60";
+            this.label_CH2_2_60.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_2_60.TabIndex = 582;
+            // 
+            // label_CH3_2_50
+            // 
+            this.label_CH3_2_50.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_2_50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_2_50.Location = new System.Drawing.Point(289, 63);
+            this.label_CH3_2_50.Name = "label_CH3_2_50";
+            this.label_CH3_2_50.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_2_50.TabIndex = 581;
+            // 
+            // label_CH1_1_70
+            // 
+            this.label_CH1_1_70.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_1_70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_1_70.Location = new System.Drawing.Point(27, 23);
+            this.label_CH1_1_70.Name = "label_CH1_1_70";
+            this.label_CH1_1_70.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_1_70.TabIndex = 562;
+            // 
+            // label_CH3_1_30
+            // 
+            this.label_CH3_1_30.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_1_30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_1_30.Location = new System.Drawing.Point(236, 103);
+            this.label_CH3_1_30.Name = "label_CH3_1_30";
+            this.label_CH3_1_30.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_1_30.TabIndex = 572;
+            // 
+            // label_CH2_1_40
+            // 
+            this.label_CH2_1_40.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_1_40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_1_40.Location = new System.Drawing.Point(131, 83);
+            this.label_CH2_1_40.Name = "label_CH2_1_40";
+            this.label_CH2_1_40.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_1_40.TabIndex = 573;
+            // 
+            // label_CH3_2_20
+            // 
+            this.label_CH3_2_20.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_2_20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_2_20.Location = new System.Drawing.Point(289, 123);
+            this.label_CH3_2_20.Name = "label_CH3_2_20";
+            this.label_CH3_2_20.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_2_20.TabIndex = 578;
+            // 
+            // label_CH1_2_60
+            // 
+            this.label_CH1_2_60.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_2_60.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_2_60.Location = new System.Drawing.Point(80, 43);
+            this.label_CH1_2_60.Name = "label_CH1_2_60";
+            this.label_CH1_2_60.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_2_60.TabIndex = 568;
+            // 
+            // label_CH3_1_50
+            // 
+            this.label_CH3_1_50.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_1_50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_1_50.Location = new System.Drawing.Point(236, 63);
+            this.label_CH3_1_50.Name = "label_CH3_1_50";
+            this.label_CH3_1_50.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_1_50.TabIndex = 574;
+            // 
+            // label_CH2_2_30
+            // 
+            this.label_CH2_2_30.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_2_30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_2_30.Location = new System.Drawing.Point(184, 103);
+            this.label_CH2_2_30.Name = "label_CH2_2_30";
+            this.label_CH2_2_30.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_2_30.TabIndex = 579;
+            // 
+            // label_CH3_2_10
+            // 
+            this.label_CH3_2_10.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_2_10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_2_10.Location = new System.Drawing.Point(289, 143);
+            this.label_CH3_2_10.Name = "label_CH3_2_10";
+            this.label_CH3_2_10.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_2_10.TabIndex = 577;
+            // 
+            // label_CH1_1_40
+            // 
+            this.label_CH1_1_40.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_1_40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_1_40.Location = new System.Drawing.Point(27, 83);
+            this.label_CH1_1_40.Name = "label_CH1_1_40";
+            this.label_CH1_1_40.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_1_40.TabIndex = 559;
+            // 
+            // label_CH3_1_20
+            // 
+            this.label_CH3_1_20.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_1_20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_1_20.Location = new System.Drawing.Point(236, 123);
+            this.label_CH3_1_20.Name = "label_CH3_1_20";
+            this.label_CH3_1_20.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_1_20.TabIndex = 571;
+            // 
+            // label_CH2_1_60
+            // 
+            this.label_CH2_1_60.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_1_60.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_1_60.Location = new System.Drawing.Point(131, 43);
+            this.label_CH2_1_60.Name = "label_CH2_1_60";
+            this.label_CH2_1_60.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_1_60.TabIndex = 575;
+            // 
+            // label_CH3_1_10
+            // 
+            this.label_CH3_1_10.BackColor = System.Drawing.Color.Silver;
+            this.label_CH3_1_10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH3_1_10.Location = new System.Drawing.Point(236, 143);
+            this.label_CH3_1_10.Name = "label_CH3_1_10";
+            this.label_CH3_1_10.Size = new System.Drawing.Size(20, 20);
+            this.label_CH3_1_10.TabIndex = 570;
+            // 
+            // label_CH1_2_30
+            // 
+            this.label_CH1_2_30.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_2_30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_2_30.Location = new System.Drawing.Point(80, 103);
+            this.label_CH1_2_30.Name = "label_CH1_2_30";
+            this.label_CH1_2_30.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_2_30.TabIndex = 565;
+            // 
+            // label_CH2_2_50
+            // 
+            this.label_CH2_2_50.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_2_50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_2_50.Location = new System.Drawing.Point(184, 63);
+            this.label_CH2_2_50.Name = "label_CH2_2_50";
+            this.label_CH2_2_50.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_2_50.TabIndex = 581;
+            // 
+            // label_CH1_1_60
+            // 
+            this.label_CH1_1_60.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_1_60.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_1_60.Location = new System.Drawing.Point(27, 43);
+            this.label_CH1_1_60.Name = "label_CH1_1_60";
+            this.label_CH1_1_60.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_1_60.TabIndex = 561;
+            // 
+            // label_CH2_1_30
+            // 
+            this.label_CH2_1_30.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_1_30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_1_30.Location = new System.Drawing.Point(131, 103);
+            this.label_CH2_1_30.Name = "label_CH2_1_30";
+            this.label_CH2_1_30.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_1_30.TabIndex = 572;
+            // 
+            // label_CH1_2_50
+            // 
+            this.label_CH1_2_50.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_2_50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_2_50.Location = new System.Drawing.Point(80, 63);
+            this.label_CH1_2_50.Name = "label_CH1_2_50";
+            this.label_CH1_2_50.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_2_50.TabIndex = 567;
+            // 
+            // label_CH2_2_20
+            // 
+            this.label_CH2_2_20.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_2_20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_2_20.Location = new System.Drawing.Point(184, 123);
+            this.label_CH2_2_20.Name = "label_CH2_2_20";
+            this.label_CH2_2_20.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_2_20.TabIndex = 578;
+            // 
+            // label_CH1_1_30
+            // 
+            this.label_CH1_1_30.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_1_30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_1_30.Location = new System.Drawing.Point(27, 103);
+            this.label_CH1_1_30.Name = "label_CH1_1_30";
+            this.label_CH1_1_30.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_1_30.TabIndex = 558;
+            // 
+            // label_CH2_1_50
+            // 
+            this.label_CH2_1_50.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_1_50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_1_50.Location = new System.Drawing.Point(131, 63);
+            this.label_CH2_1_50.Name = "label_CH2_1_50";
+            this.label_CH2_1_50.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_1_50.TabIndex = 574;
+            // 
+            // label_CH1_2_20
+            // 
+            this.label_CH1_2_20.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_2_20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_2_20.Location = new System.Drawing.Point(80, 123);
+            this.label_CH1_2_20.Name = "label_CH1_2_20";
+            this.label_CH1_2_20.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_2_20.TabIndex = 564;
+            // 
+            // label_CH2_2_10
+            // 
+            this.label_CH2_2_10.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_2_10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_2_10.Location = new System.Drawing.Point(184, 143);
+            this.label_CH2_2_10.Name = "label_CH2_2_10";
+            this.label_CH2_2_10.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_2_10.TabIndex = 577;
+            // 
+            // label_CH1_1_50
+            // 
+            this.label_CH1_1_50.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_1_50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_1_50.Location = new System.Drawing.Point(27, 63);
+            this.label_CH1_1_50.Name = "label_CH1_1_50";
+            this.label_CH1_1_50.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_1_50.TabIndex = 560;
+            // 
+            // label_CH2_1_20
+            // 
+            this.label_CH2_1_20.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_1_20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_1_20.Location = new System.Drawing.Point(131, 123);
+            this.label_CH2_1_20.Name = "label_CH2_1_20";
+            this.label_CH2_1_20.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_1_20.TabIndex = 571;
+            // 
+            // label_CH1_2_10
+            // 
+            this.label_CH1_2_10.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_2_10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_2_10.Location = new System.Drawing.Point(80, 143);
+            this.label_CH1_2_10.Name = "label_CH1_2_10";
+            this.label_CH1_2_10.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_2_10.TabIndex = 563;
+            // 
+            // label_CH2_1_10
+            // 
+            this.label_CH2_1_10.BackColor = System.Drawing.Color.Silver;
+            this.label_CH2_1_10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH2_1_10.Location = new System.Drawing.Point(131, 143);
+            this.label_CH2_1_10.Name = "label_CH2_1_10";
+            this.label_CH2_1_10.Size = new System.Drawing.Size(20, 20);
+            this.label_CH2_1_10.TabIndex = 570;
+            // 
+            // label_CH1_1_20
+            // 
+            this.label_CH1_1_20.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_1_20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_1_20.Location = new System.Drawing.Point(27, 123);
+            this.label_CH1_1_20.Name = "label_CH1_1_20";
+            this.label_CH1_1_20.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_1_20.TabIndex = 557;
+            // 
+            // label_CH1_1_10
+            // 
+            this.label_CH1_1_10.BackColor = System.Drawing.Color.Silver;
+            this.label_CH1_1_10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_CH1_1_10.Location = new System.Drawing.Point(27, 143);
+            this.label_CH1_1_10.Name = "label_CH1_1_10";
+            this.label_CH1_1_10.Size = new System.Drawing.Size(20, 20);
+            this.label_CH1_1_10.TabIndex = 556;
             // 
             // label1
             // 
@@ -783,18 +1089,6 @@ namespace ReflowCoolingSystem
         private System.Windows.Forms.Label Label_Device;
         private System.Windows.Forms.Panel Img_PCB;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel Img_Zone1_1;
-        private System.Windows.Forms.Panel Img_Zone1_2;
-        private System.Windows.Forms.Panel Img_Zone3_4;
-        private System.Windows.Forms.Panel Img_Zone2_4;
-        private System.Windows.Forms.Panel Img_Zone3_2;
-        private System.Windows.Forms.Panel Img_Zone1_4;
-        private System.Windows.Forms.Panel Img_Zone3_3;
-        private System.Windows.Forms.Panel Img_Zone2_2;
-        private System.Windows.Forms.Panel Img_Zone3_1;
-        private System.Windows.Forms.Panel Img_Zone2_3;
-        private System.Windows.Forms.Panel Img_Zone1_3;
-        private System.Windows.Forms.Panel Img_Zone2_1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabControl tabControl1;
@@ -823,5 +1117,47 @@ namespace ReflowCoolingSystem
         private System.Windows.Forms.Button btnCH1Off;
         private System.Windows.Forms.Button btnCH2Off;
         private System.Windows.Forms.Button btnCH3Off;
+        private System.Windows.Forms.Label label_CH1_1_10;
+        private System.Windows.Forms.Label label_CH1_1_70;
+        private System.Windows.Forms.Label label_CH1_1_40;
+        private System.Windows.Forms.Label label_CH1_1_60;
+        private System.Windows.Forms.Label label_CH1_1_30;
+        private System.Windows.Forms.Label label_CH1_1_50;
+        private System.Windows.Forms.Label label_CH1_1_20;
+        private System.Windows.Forms.Label label_CH3_2_70;
+        private System.Windows.Forms.Label label_CH2_2_70;
+        private System.Windows.Forms.Label label_CH3_2_40;
+        private System.Windows.Forms.Label label_CH1_2_70;
+        private System.Windows.Forms.Label label_CH3_1_70;
+        private System.Windows.Forms.Label label_CH3_2_60;
+        private System.Windows.Forms.Label label_CH2_2_40;
+        private System.Windows.Forms.Label label_CH3_1_40;
+        private System.Windows.Forms.Label label_CH1_2_40;
+        private System.Windows.Forms.Label label_CH3_2_30;
+        private System.Windows.Forms.Label label_CH2_1_70;
+        private System.Windows.Forms.Label label_CH3_1_60;
+        private System.Windows.Forms.Label label_CH2_2_60;
+        private System.Windows.Forms.Label label_CH3_2_50;
+        private System.Windows.Forms.Label label_CH3_1_30;
+        private System.Windows.Forms.Label label_CH2_1_40;
+        private System.Windows.Forms.Label label_CH3_2_20;
+        private System.Windows.Forms.Label label_CH1_2_60;
+        private System.Windows.Forms.Label label_CH3_1_50;
+        private System.Windows.Forms.Label label_CH2_2_30;
+        private System.Windows.Forms.Label label_CH3_2_10;
+        private System.Windows.Forms.Label label_CH3_1_20;
+        private System.Windows.Forms.Label label_CH2_1_60;
+        private System.Windows.Forms.Label label_CH3_1_10;
+        private System.Windows.Forms.Label label_CH1_2_30;
+        private System.Windows.Forms.Label label_CH2_2_50;
+        private System.Windows.Forms.Label label_CH2_1_30;
+        private System.Windows.Forms.Label label_CH1_2_50;
+        private System.Windows.Forms.Label label_CH2_2_20;
+        private System.Windows.Forms.Label label_CH2_1_50;
+        private System.Windows.Forms.Label label_CH1_2_20;
+        private System.Windows.Forms.Label label_CH2_2_10;
+        private System.Windows.Forms.Label label_CH2_1_20;
+        private System.Windows.Forms.Label label_CH1_2_10;
+        private System.Windows.Forms.Label label_CH2_1_10;
     }
 }

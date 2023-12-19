@@ -72,6 +72,8 @@ namespace ReflowCoolingSystem.Squence
             {
                 F_PROCESS_ALL_ZEROSET();
 
+                Global.Towerlamp_Set((byte)Switch.On, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
+
                 Define.seqMode[module] = Define.MODE_IDLE;
                 Define.seqCtrl[module] = Define.CTRL_IDLE;
                 Define.seqSts[module] = Define.STS_ABORTOK;                               
@@ -360,7 +362,9 @@ namespace ReflowCoolingSystem.Squence
         }
 
         private void P_PROCESS_End()
-        {            
+        {
+            Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.On, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
+
             Define.seqMode[module] = Define.MODE_IDLE;
             Define.seqCtrl[module] = Define.CTRL_IDLE;
             Define.seqSts[module] = Define.STS_PROCESS_END;

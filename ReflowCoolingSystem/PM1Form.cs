@@ -1,5 +1,6 @@
 ﻿using Ajin_IO_driver;
 using System;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -27,6 +28,12 @@ namespace ReflowCoolingSystem
         int module;
         string ModuleName;
         private Label[] m_valueBox;
+        private Label[] m_CH1_1psiLevel;
+        private Label[] m_CH1_2psiLevel;
+        private Label[] m_CH2_1psiLevel;
+        private Label[] m_CH2_2psiLevel;
+        private Label[] m_CH3_1psiLevel;
+        private Label[] m_CH3_2psiLevel;        
 
         int nCallCnt = 0;
         bool bIdleFlag = true;
@@ -47,6 +54,13 @@ namespace ReflowCoolingSystem
             ModuleName = "PM1";
 
             m_valueBox = new Label[Define.OUT_CH_MAX - 1] { Label_ActualZone1Psi, Label_ActualZone2Psi, Label_ActualZone3Psi };
+
+            m_CH1_1psiLevel = new Label[7] { label_CH1_1_10, label_CH1_1_20, label_CH1_1_30, label_CH1_1_40, label_CH1_1_50, label_CH1_1_60, label_CH1_1_70 };
+            m_CH1_2psiLevel = new Label[7] { label_CH1_2_10, label_CH1_2_20, label_CH1_2_30, label_CH1_2_40, label_CH1_2_50, label_CH1_2_60, label_CH1_2_70 };
+            m_CH2_1psiLevel = new Label[7] { label_CH2_1_10, label_CH2_1_20, label_CH2_1_30, label_CH2_1_40, label_CH2_1_50, label_CH2_1_60, label_CH2_1_70 };
+            m_CH2_2psiLevel = new Label[7] { label_CH2_2_10, label_CH2_2_20, label_CH2_2_30, label_CH2_2_40, label_CH2_2_50, label_CH2_2_60, label_CH2_2_70 };
+            m_CH3_1psiLevel = new Label[7] { label_CH3_1_10, label_CH3_1_20, label_CH3_1_30, label_CH3_1_40, label_CH3_1_50, label_CH3_1_60, label_CH3_1_70 };
+            m_CH3_2psiLevel = new Label[7] { label_CH3_2_10, label_CH3_2_20, label_CH3_2_30, label_CH3_2_40, label_CH3_2_50, label_CH3_2_60, label_CH3_2_70 };
         }
 
         private void PM1Form_Load(object sender, EventArgs e)
@@ -94,8 +108,10 @@ namespace ReflowCoolingSystem
                         Define.strBackupDeviceName = "Empty";
                         Define.strDeviceName = "--";
 
+                        /*
                         if ((Define.bAlarm1 == false) && (Define.bAlarm2 == false) && (Define.bAlarm3 == false))
                             Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
+                        */                        
 
                         bIdleFlag = false;
                     }                    
@@ -116,8 +132,10 @@ namespace ReflowCoolingSystem
 
                         bRecipeReadFlag = true;
 
+                        /*
                         if ((Define.bAlarm1 == false) && (Define.bAlarm2 == false) && (Define.bAlarm3 == false))
                             Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.On, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
+                        */                        
                     }
                 }
                
@@ -145,10 +163,6 @@ namespace ReflowCoolingSystem
                     }                                            
                 }
 
-
-                textBox_SetZone1Psi.Text = (Define.dCH1PsiSetValue).ToString("0.0");
-                textBox_SetZone2Psi.Text = (Define.dCH2PsiSetValue).ToString("0.0");
-                textBox_SetZone3Psi.Text = (Define.dCH3PsiSetValue).ToString("0.0");
                 /*
                 for (int i = 0; i < Define.OUT_CH_MAX - 1; i++)
                 {
@@ -159,6 +173,13 @@ namespace ReflowCoolingSystem
                 } 
                 */
 
+                textBox_SetZone1Psi.Text = (Define.dCH1PsiSetValue).ToString("0.0");
+                textBox_SetZone2Psi.Text = (Define.dCH2PsiSetValue).ToString("0.0");
+                textBox_SetZone3Psi.Text = (Define.dCH3PsiSetValue).ToString("0.0");
+
+                _ui_psiLevel_show();                
+
+
                 if (Define.bPM1Event)
                 {
                     Eventlog_File_Read();
@@ -168,7 +189,513 @@ namespace ReflowCoolingSystem
             {
                 
             }            
-        }        
+        }
+
+        private void _ui_psiLevel_show()
+        {
+            int iPsiLevel = 7;
+
+            // CH1
+            if (Define.dCH1PsiSetValue <= 0)
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (m_CH1_1psiLevel[i].BackColor != Color.Silver)
+                        m_CH1_1psiLevel[i].BackColor = Color.Silver;
+
+                    if (m_CH1_2psiLevel[i].BackColor != Color.Silver)
+                        m_CH1_2psiLevel[i].BackColor = Color.Silver;
+                }
+            }
+            else if ((Define.dCH1PsiSetValue > 0) && (Define.dCH1PsiSetValue <= 10))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0)
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH1PsiSetValue > 10) && (Define.dCH1PsiSetValue <= 20))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1)
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH1PsiSetValue > 20) && (Define.dCH1PsiSetValue <= 30))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2)
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH1PsiSetValue > 30) && (Define.dCH1PsiSetValue <= 40))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i == 3)
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH1PsiSetValue > 40) && (Define.dCH1PsiSetValue <= 50))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4)
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH1PsiSetValue > 50) && (Define.dCH1PsiSetValue <= 60))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4 || i == 5)
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH1_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH1_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH1_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH1_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH1PsiSetValue > 60) && (Define.dCH1PsiSetValue <= 70))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (m_CH1_1psiLevel[i].BackColor != Color.Lime)
+                        m_CH1_1psiLevel[i].BackColor = Color.Lime;
+
+                    if (m_CH1_2psiLevel[i].BackColor != Color.Lime)
+                        m_CH1_2psiLevel[i].BackColor = Color.Lime;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (m_CH1_1psiLevel[i].BackColor != Color.Silver)
+                        m_CH1_1psiLevel[i].BackColor = Color.Silver;
+
+                    if (m_CH1_2psiLevel[i].BackColor != Color.Silver)
+                        m_CH1_2psiLevel[i].BackColor = Color.Silver;
+                }
+            }
+
+            // CH2
+            if (Define.dCH2PsiSetValue <= 0)
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (m_CH2_1psiLevel[i].BackColor != Color.Silver)
+                        m_CH2_1psiLevel[i].BackColor = Color.Silver;
+
+                    if (m_CH2_2psiLevel[i].BackColor != Color.Silver)
+                        m_CH2_2psiLevel[i].BackColor = Color.Silver;
+                }
+            }
+            else if ((Define.dCH2PsiSetValue > 0) && (Define.dCH2PsiSetValue <= 10))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0)
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH2PsiSetValue > 10) && (Define.dCH2PsiSetValue <= 20))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1)
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH2PsiSetValue > 20) && (Define.dCH2PsiSetValue <= 30))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2)
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH2PsiSetValue > 30) && (Define.dCH2PsiSetValue <= 40))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i == 3)
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH2PsiSetValue > 40) && (Define.dCH2PsiSetValue <= 50))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4)
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH2PsiSetValue > 50) && (Define.dCH2PsiSetValue <= 60))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4 || i == 5)
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH2_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH2_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH2_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH2_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH2PsiSetValue > 60) && (Define.dCH2PsiSetValue <= 70))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (m_CH2_1psiLevel[i].BackColor != Color.Lime)
+                        m_CH2_1psiLevel[i].BackColor = Color.Lime;
+
+                    if (m_CH2_2psiLevel[i].BackColor != Color.Lime)
+                        m_CH2_2psiLevel[i].BackColor = Color.Lime;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (m_CH2_1psiLevel[i].BackColor != Color.Silver)
+                        m_CH2_1psiLevel[i].BackColor = Color.Silver;
+
+                    if (m_CH2_2psiLevel[i].BackColor != Color.Silver)
+                        m_CH2_2psiLevel[i].BackColor = Color.Silver;
+                }
+            }
+
+            // CH3
+            if (Define.dCH3PsiSetValue <= 0)
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (m_CH3_1psiLevel[i].BackColor != Color.Silver)
+                        m_CH3_1psiLevel[i].BackColor = Color.Silver;
+
+                    if (m_CH3_2psiLevel[i].BackColor != Color.Silver)
+                        m_CH3_2psiLevel[i].BackColor = Color.Silver;
+                }
+            }
+            else if ((Define.dCH3PsiSetValue > 0) && (Define.dCH3PsiSetValue <= 10))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0)
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH3PsiSetValue > 10) && (Define.dCH3PsiSetValue <= 20))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1)
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH3PsiSetValue > 20) && (Define.dCH3PsiSetValue <= 30))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2)
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH3PsiSetValue > 30) && (Define.dCH3PsiSetValue <= 40))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i == 3)
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH3PsiSetValue > 40) && (Define.dCH3PsiSetValue <= 50))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4)
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH3PsiSetValue > 50) && (Define.dCH3PsiSetValue <= 60))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4 || i == 5)
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_1psiLevel[i].BackColor = Color.Lime;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Lime)
+                            m_CH3_2psiLevel[i].BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        if (m_CH3_1psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_1psiLevel[i].BackColor = Color.Silver;
+
+                        if (m_CH3_2psiLevel[i].BackColor != Color.Silver)
+                            m_CH3_2psiLevel[i].BackColor = Color.Silver;
+                    }
+                }
+            }
+            else if ((Define.dCH3PsiSetValue > 60) && (Define.dCH3PsiSetValue <= 70))
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (m_CH3_1psiLevel[i].BackColor != Color.Lime)
+                        m_CH3_1psiLevel[i].BackColor = Color.Lime;
+
+                    if (m_CH3_2psiLevel[i].BackColor != Color.Lime)
+                        m_CH3_2psiLevel[i].BackColor = Color.Lime;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < iPsiLevel; i++)
+                {
+                    if (m_CH3_1psiLevel[i].BackColor != Color.Silver)
+                        m_CH3_1psiLevel[i].BackColor = Color.Silver;
+
+                    if (m_CH3_2psiLevel[i].BackColor != Color.Silver)
+                        m_CH3_2psiLevel[i].BackColor = Color.Silver;
+                }
+            }
+        }
 
         private void F_SERVER_DATA_PARSING()
         {
