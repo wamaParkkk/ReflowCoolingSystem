@@ -29,8 +29,8 @@ namespace ReflowCoolingSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Label_ActualZone2Psi = new System.Windows.Forms.Label();
             this.Label_ActualZone1Psi = new System.Windows.Forms.Label();
             this.Label_ActualZone3Psi = new System.Windows.Forms.Label();
@@ -695,8 +695,8 @@ namespace ReflowCoolingSystem
             this.recipeGrid.AllowUserToDeleteRows = false;
             this.recipeGrid.AllowUserToResizeColumns = false;
             this.recipeGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recipeGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recipeGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.recipeGrid.BackgroundColor = System.Drawing.Color.White;
             this.recipeGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.recipeGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -706,8 +706,8 @@ namespace ReflowCoolingSystem
             this.recipeGrid.Name = "recipeGrid";
             this.recipeGrid.ReadOnly = true;
             this.recipeGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recipeGrid.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recipeGrid.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.recipeGrid.RowTemplate.Height = 23;
             this.recipeGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.recipeGrid.Size = new System.Drawing.Size(244, 120);

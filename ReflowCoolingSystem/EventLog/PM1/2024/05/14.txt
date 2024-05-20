@@ -1,0 +1,148 @@
+[2024-05-14, 08:41:32] Complete the REFLOW status init
+[2024-05-14, 08:41:55] Complete the REFLOW status init
+[2024-05-14, 08:41:55] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 08:43:14] Complete the REFLOW status init
+[2024-05-14, 08:44:45] Complete the REFLOW status init
+[2024-05-14, 08:46:16] Complete the REFLOW status init
+[2024-05-14, 08:47:46] Complete the REFLOW status init
+[2024-05-14, 08:47:56] Complete the REFLOW status init
+[2024-05-14, 08:47:56] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 08:50:12] Complete the REFLOW status init
+[2024-05-14, 08:50:18] Start the air blow setup
+[2024-05-14, 08:50:18] Loading registered device
+[2024-05-14, 08:50:21] Loading process recipe file
+[2024-05-14, 08:50:21] Failed to read recipe file
+[2024-05-14, 08:50:21] Process has stopped : Abort
+[2024-05-14, 08:50:26] Complete the REFLOW status init
+[2024-05-14, 08:50:26] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 08:51:07] Complete the REFLOW status init
+[2024-05-14, 08:51:12] Start the air blow setup
+[2024-05-14, 08:51:12] Loading registered device
+[2024-05-14, 08:51:15] Loading process recipe file
+[2024-05-14, 08:51:15] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 08:51:17] Complete the REFLOW status init
+[2024-05-14, 08:51:17] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 08:52:01] Complete the REFLOW status init
+[2024-05-14, 08:52:07] Start the air blow setup
+[2024-05-14, 08:52:08] Loading registered device
+[2024-05-14, 08:52:10] Loading process recipe file
+[2024-05-14, 08:52:10] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 08:52:13] Complete the REFLOW status init
+[2024-05-14, 08:52:13] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 08:52:56] Complete the REFLOW status init
+[2024-05-14, 08:53:01] Start the air blow setup
+[2024-05-14, 08:53:01] Loading registered device
+[2024-05-14, 08:53:04] Loading process recipe file
+[2024-05-14, 08:53:04] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 08:53:05] Complete the REFLOW status init
+[2024-05-14, 08:53:05] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 08:54:13] 스레드가 중단되었습니다.
+[2024-05-14, 08:54:48] Complete the REFLOW status init
+[2024-05-14, 08:54:54] Start the air blow setup
+[2024-05-14, 08:54:54] Loading registered device
+[2024-05-14, 08:54:57] Loading process recipe file
+[2024-05-14, 08:54:57] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 08:55:01] Complete the REFLOW status init
+[2024-05-14, 08:55:01] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 11:37:15] Complete the REFLOW status init
+[2024-05-14, 11:37:25] Complete the REFLOW status init
+[2024-05-14, 11:37:25] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 11:44:52] Complete the REFLOW status init
+[2024-05-14, 11:45:12] Complete the REFLOW status init
+[2024-05-14, 11:45:12] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 11:46:42] Complete the REFLOW status init
+[2024-05-14, 11:47:34] Complete the REFLOW status init
+[2024-05-14, 11:47:48] Complete the REFLOW status init
+[2024-05-14, 11:48:52] Complete the REFLOW status init
+[2024-05-14, 11:48:52] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 11:49:31] Start the air blow setup
+[2024-05-14, 11:49:31] Start the air blow setup
+[2024-05-14, 11:49:31] Loading registered device
+[2024-05-14, 11:49:31] Loading registered device
+[2024-05-14, 11:49:33] Loading process recipe file
+[2024-05-14, 11:49:33] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 11:49:33] Loading process recipe file
+[2024-05-14, 11:49:33] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 11:49:34] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2024-05-14.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2024-05-14, 11:49:37] Process has stopped : Abort
+[2024-05-14, 11:50:00] Complete the REFLOW status init
+[2024-05-14, 11:50:00] Complete the REFLOW status init
+[2024-05-14, 11:50:08] Start the air blow setup
+[2024-05-14, 11:50:08] Loading registered device
+[2024-05-14, 11:50:08] Loading registered device
+[2024-05-14, 11:50:11] Loading process recipe file
+[2024-05-14, 11:50:11] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 11:50:11] Loading process recipe file
+[2024-05-14, 11:50:11] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 11:50:12] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2024-05-14.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2024-05-14, 11:50:14] Process has stopped : Abort
+[2024-05-14, 12:33:49] Complete the REFLOW status init
+[2024-05-14, 12:34:00] Complete the REFLOW status init
+[2024-05-14, 12:34:00] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 12:35:03] Start the air blow setup
+[2024-05-14, 12:35:03] Start the air blow setup
+[2024-05-14, 12:35:03] Loading registered device
+[2024-05-14, 12:35:03] Loading registered device
+[2024-05-14, 12:35:06] Loading process recipe file
+[2024-05-14, 12:35:06] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:35:06] Loading process recipe file
+[2024-05-14, 12:35:06] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:35:25] Complete the REFLOW status init
+[2024-05-14, 12:35:25] Complete the REFLOW status init
+[2024-05-14, 12:36:36] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2024-05-14.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2024-05-14, 12:36:36] Process has stopped : Abort
+[2024-05-14, 12:36:56] Complete the REFLOW status init
+[2024-05-14, 12:36:56] Complete the REFLOW status init
+[2024-05-14, 12:38:27] Complete the REFLOW status init
+[2024-05-14, 12:38:31] Start the air blow setup
+[2024-05-14, 12:38:31] Start the air blow setup
+[2024-05-14, 12:38:31] Loading registered device
+[2024-05-14, 12:38:31] Loading registered device
+[2024-05-14, 12:38:33] Loading process recipe file
+[2024-05-14, 12:38:33] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:38:33] Loading process recipe file
+[2024-05-14, 12:38:34] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:53:28] Complete the REFLOW status init
+[2024-05-14, 12:53:41] Complete the REFLOW status init
+[2024-05-14, 12:53:41] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 12:53:48] Start the air blow setup
+[2024-05-14, 12:53:48] Start the air blow setup
+[2024-05-14, 12:53:48] Loading registered device
+[2024-05-14, 12:53:48] Loading registered device
+[2024-05-14, 12:53:50] Loading process recipe file
+[2024-05-14, 12:53:50] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:53:50] Loading process recipe file
+[2024-05-14, 12:53:50] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:54:00] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2024-05-14.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2024-05-14, 12:54:00] Process has stopped : Abort
+[2024-05-14, 12:54:01] Start the air blow setup
+[2024-05-14, 12:54:01] Start the air blow setup
+[2024-05-14, 12:54:01] Loading registered device
+[2024-05-14, 12:54:01] Loading registered device
+[2024-05-14, 12:54:03] Loading process recipe file
+[2024-05-14, 12:54:03] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:54:03] Loading process recipe file
+[2024-05-14, 12:54:03] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:55:59] Complete the REFLOW status init
+[2024-05-14, 12:56:09] Complete the REFLOW status init
+[2024-05-14, 12:56:09] [LOG-IN] [000000_Amkor_Master]
+[2024-05-14, 12:56:12] Start the air blow setup
+[2024-05-14, 12:56:12] Start the air blow setup
+[2024-05-14, 12:56:13] Loading registered device
+[2024-05-14, 12:56:13] Loading registered device
+[2024-05-14, 12:56:15] Loading process recipe file
+[2024-05-14, 12:56:15] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:56:15] Loading process recipe file
+[2024-05-14, 12:56:15] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:56:16] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2024-05-14.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2024-05-14, 12:56:16] Process has stopped : Abort
+[2024-05-14, 12:56:28] Start the air blow setup
+[2024-05-14, 12:56:28] Start the air blow setup
+[2024-05-14, 12:56:28] Loading registered device
+[2024-05-14, 12:56:29] Loading registered device
+[2024-05-14, 12:56:31] Loading process recipe file
+[2024-05-14, 12:56:31] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:56:31] Loading process recipe file
+[2024-05-14, 12:56:31] Recipe file was successfully read : 70psi.csv
+[2024-05-14, 12:56:32] 'C:\Users\156607\Amkor_Project\ReflowCoolingSystem\ReflowCoolingSystem\AjinIOLog\2024-05-14.txt' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2024-05-14, 12:56:32] Process has stopped : Abort

@@ -93,6 +93,16 @@ namespace ReflowCoolingSystem
             {
                 MessageBox.Show(ex.Message, "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);                
             }          
-        }            
+        }
+
+        private void btnIdle_Click(object sender, EventArgs e)
+        {
+            Define.ReflowState = Define.REFLOW_IDLE;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Define.ReflowState = Define.REFLOW_RUN;
+        }
     }
 }

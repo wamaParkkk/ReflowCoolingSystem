@@ -32,14 +32,16 @@ namespace ReflowCoolingSystem
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigureForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtBoxAirBlowTimeOut = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnParameterSave = new System.Windows.Forms.Button();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.txtBoxAirBlowTolerance = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.txtBoxAirBlowTimeOut = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnIdle = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +64,44 @@ namespace ReflowCoolingSystem
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "< Time >";
+            // 
+            // txtBoxAirBlowTimeOut
+            // 
+            this.txtBoxAirBlowTimeOut.BackColor = System.Drawing.SystemColors.Control;
+            this.txtBoxAirBlowTimeOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtBoxAirBlowTimeOut.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAirBlowTimeOut.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBoxAirBlowTimeOut.Location = new System.Drawing.Point(333, 88);
+            this.txtBoxAirBlowTimeOut.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtBoxAirBlowTimeOut.Name = "txtBoxAirBlowTimeOut";
+            this.txtBoxAirBlowTimeOut.ReadOnly = true;
+            this.txtBoxAirBlowTimeOut.Size = new System.Drawing.Size(152, 30);
+            this.txtBoxAirBlowTimeOut.TabIndex = 44;
+            this.txtBoxAirBlowTimeOut.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxAirBlowTimeOut.Click += new System.EventHandler(this.txtBoxDoorOpenCloseTimeout_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(26, 90);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 25);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Air blow time out";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.Location = new System.Drawing.Point(495, 97);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 21);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "sec";
             // 
             // btnParameterSave
             // 
@@ -128,43 +168,27 @@ namespace ReflowCoolingSystem
             this.label26.TabIndex = 24;
             this.label26.Text = "%";
             // 
-            // txtBoxAirBlowTimeOut
+            // btnIdle
             // 
-            this.txtBoxAirBlowTimeOut.BackColor = System.Drawing.SystemColors.Control;
-            this.txtBoxAirBlowTimeOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.txtBoxAirBlowTimeOut.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxAirBlowTimeOut.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBoxAirBlowTimeOut.Location = new System.Drawing.Point(333, 88);
-            this.txtBoxAirBlowTimeOut.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtBoxAirBlowTimeOut.Name = "txtBoxAirBlowTimeOut";
-            this.txtBoxAirBlowTimeOut.ReadOnly = true;
-            this.txtBoxAirBlowTimeOut.Size = new System.Drawing.Size(152, 30);
-            this.txtBoxAirBlowTimeOut.TabIndex = 44;
-            this.txtBoxAirBlowTimeOut.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtBoxAirBlowTimeOut.Click += new System.EventHandler(this.txtBoxDoorOpenCloseTimeout_Click);
+            this.btnIdle.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIdle.Location = new System.Drawing.Point(1085, 760);
+            this.btnIdle.Name = "btnIdle";
+            this.btnIdle.Size = new System.Drawing.Size(75, 23);
+            this.btnIdle.TabIndex = 12;
+            this.btnIdle.Text = "Idle";
+            this.btnIdle.UseVisualStyleBackColor = true;
+            this.btnIdle.Click += new System.EventHandler(this.btnIdle_Click);
             // 
-            // label1
+            // button2
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(26, 90);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 25);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Air blow time out";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(495, 97);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 21);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "sec";
+            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1085, 789);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Run";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ConfigureForm
             // 
@@ -172,6 +196,8 @@ namespace ReflowCoolingSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1172, 824);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnIdle);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -197,5 +223,7 @@ namespace ReflowCoolingSystem
         private System.Windows.Forms.TextBox txtBoxAirBlowTimeOut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnIdle;
+        private System.Windows.Forms.Button button2;
     }
 }

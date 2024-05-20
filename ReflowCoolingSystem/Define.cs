@@ -88,8 +88,7 @@
         public const byte STS_ABORTOK = 5;
         /////////////////////////////////////////////////       
 
-        public static string strDeviceName = string.Empty;
-        public static string strBackupDeviceName = string.Empty;
+        public static string strDeviceName = string.Empty;        
 
         // Device 등록 시 선택된 Recipe
         public static string sSelectRecipeName;

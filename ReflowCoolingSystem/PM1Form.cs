@@ -94,48 +94,45 @@ namespace ReflowCoolingSystem
                 {
                     label_REFLOW_State.Text = "Idle";
 
-                    // Air blow zero set, Device name init, Tower lamp set
-                    if (bIdleFlag)
+                    if (!bIdleFlag)
+                        bIdleFlag = true;
+
+                    // Air blow zero set, Tower lamp set
+                    AIOClass.WriteVoltage(0, 0);
+                    AIOClass.WriteVoltage(1, 0);
+                    AIOClass.WriteVoltage(2, 0);
+
+                    Define.dCH1PsiSetValue = 0.0;
+                    Define.dCH2PsiSetValue = 0.0;
+                    Define.dCH3PsiSetValue = 0.0;
+                    
+                    /*
+                    if ((Define.bAlarm1 == false) && (Define.bAlarm2 == false) && (Define.bAlarm3 == false))
                     {
-                        AIOClass.WriteVoltage(0, 0);
-                        AIOClass.WriteVoltage(1, 0);
-                        AIOClass.WriteVoltage(2, 0);
-
-                        Define.dCH1PsiSetValue = 0.0;
-                        Define.dCH2PsiSetValue = 0.0;
-                        Define.dCH3PsiSetValue = 0.0;
-
-                        Define.strBackupDeviceName = "Empty";
-                        Define.strDeviceName = "--";
-
-                        /*
-                        if ((Define.bAlarm1 == false) && (Define.bAlarm2 == false) && (Define.bAlarm3 == false))
-                            Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
-                        */                        
-
-                        bIdleFlag = false;
-                    }                    
+                        Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
+                    } 
+                    */
                 }
                 else if (Define.ReflowState == Define.REFLOW_RUN)
                 {
                     label_REFLOW_State.Text = "Auto run";
-                    if (!bIdleFlag)
-                        bIdleFlag = true;
 
-                    if (Define.strBackupDeviceName != Define.strDeviceName)
-                    {
-                        Define.strBackupDeviceName = Define.strDeviceName;
-
+                    if (bIdleFlag)
+                    {                        
                         Define.seqMode[module] = Define.MODE_PROCESS;
                         Define.seqCtrl[module] = Define.CTRL_RUN;
                         Define.seqSts[module] = Define.STS_IDLE;
+
+                        bIdleFlag = false;
 
                         bRecipeReadFlag = true;
 
                         /*
                         if ((Define.bAlarm1 == false) && (Define.bAlarm2 == false) && (Define.bAlarm3 == false))
+                        {
                             Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.On, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
-                        */                        
+                        } 
+                        */
                     }
                 }
                
@@ -1192,6 +1189,6 @@ namespace ReflowCoolingSystem
                     }
                     break;                
             }
-        }                
+        }        
     }
 }

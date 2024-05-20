@@ -243,7 +243,7 @@ namespace ReflowCoolingSystem
 
         private void pictureBoxBuzzer_Click(object sender, EventArgs e)
         {
-            Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
+            //Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
         }
 
         private void pictureBoxUserGuide_Click(object sender, EventArgs e)
