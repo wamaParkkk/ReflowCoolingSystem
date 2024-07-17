@@ -1,3 +1,12 @@
 [2024-07-17, 09:54:06] Complete the REFLOW status init
 [2024-07-17, 09:54:17] Complete the REFLOW status init
 [2024-07-17, 09:54:17] [LOG-IN] [000000_Amkor_Master]
+[2024-07-17, 10:10:10] Complete the REFLOW status init
+[2024-07-17, 10:10:21] Complete the REFLOW status init
+[2024-07-17, 10:10:21] [LOG-IN] [000000_Amkor_Master]
+[2024-07-17, 10:11:05] Complete the REFLOW status init
+[2024-07-17, 10:11:23] Complete the REFLOW status init
+[2024-07-17, 10:11:23] [LOG-IN] [000000_Amkor_Master]
+[2024-07-17, 10:22:31] Complete the REFLOW status init
+[2024-07-17, 10:22:39] Complete the REFLOW status init
+[2024-07-17, 10:22:39] [LOG-IN] [000000_Amkor_Master]

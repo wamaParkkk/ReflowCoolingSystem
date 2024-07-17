@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ReflowCoolingSystem
@@ -84,7 +85,7 @@ namespace ReflowCoolingSystem
             propertyInfo.SetValue(control, doubleBuffered, null);
         }        
 
-        public void Display()
+        public async void Display()
         {
             try
             {
@@ -95,16 +96,20 @@ namespace ReflowCoolingSystem
                     label_REFLOW_State.Text = "Idle";
 
                     if (!bIdleFlag)
+                    {
                         bIdleFlag = true;
 
-                    // Air blow zero set, Tower lamp set
-                    AIOClass.WriteVoltage(0, 0);
-                    AIOClass.WriteVoltage(1, 0);
-                    AIOClass.WriteVoltage(2, 0);                    
+                        // Air blow zero set, Tower lamp set
+                        AIOClass.WriteVoltage(0, 0);
+                        await Task.Delay(200);
+                        AIOClass.WriteVoltage(1, 0);
+                        await Task.Delay(200);
+                        AIOClass.WriteVoltage(2, 0);
 
-                    Define.dCH1PsiSetValue = 0.0;
-                    Define.dCH2PsiSetValue = 0.0;
-                    Define.dCH3PsiSetValue = 0.0;
+                        Define.dCH1PsiSetValue = 0.0;
+                        Define.dCH2PsiSetValue = 0.0;
+                        Define.dCH3PsiSetValue = 0.0;
+                    }
                     
                     /*
                     if ((Define.bAlarm1 == false) && (Define.bAlarm2 == false) && (Define.bAlarm3 == false))

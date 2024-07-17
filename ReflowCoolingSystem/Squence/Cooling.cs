@@ -329,6 +329,8 @@ namespace ReflowCoolingSystem.Squence
                     Define.dCH1PsiSetValue = 0.0;
                 }
 
+                Thread.Sleep(200);
+
                 // Zone2
                 if (prcsRecipe.Zone2Psi[prcsRecipe.StepNum - 1] != 0)
                 {
@@ -340,6 +342,8 @@ namespace ReflowCoolingSystem.Squence
                     AIOClass.WriteVoltage(1, 0);
                     Define.dCH2PsiSetValue = 0.0;
                 }
+
+                Thread.Sleep(200);
 
                 // Zone3
                 if (prcsRecipe.Zone3Psi[prcsRecipe.StepNum - 1] != 0)
@@ -375,7 +379,9 @@ namespace ReflowCoolingSystem.Squence
         private void F_PROCESS_ALL_ZEROSET()
         {
             AIOClass.WriteVoltage(0, 0);
+            Thread.Sleep(200);
             AIOClass.WriteVoltage(1, 0);
+            Thread.Sleep(200);
             AIOClass.WriteVoltage(2, 0);
 
             Define.dCH1PsiSetValue = 0.0;
