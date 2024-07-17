@@ -100,7 +100,7 @@ namespace ReflowCoolingSystem
                     // Air blow zero set, Tower lamp set
                     AIOClass.WriteVoltage(0, 0);
                     AIOClass.WriteVoltage(1, 0);
-                    AIOClass.WriteVoltage(2, 0);
+                    AIOClass.WriteVoltage(2, 0);                    
 
                     Define.dCH1PsiSetValue = 0.0;
                     Define.dCH2PsiSetValue = 0.0;
