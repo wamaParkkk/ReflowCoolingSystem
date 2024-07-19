@@ -37,7 +37,7 @@ namespace ReflowCoolingSystem
         private Label[] m_CH3_2psiLevel;        
 
         int nCallCnt = 0;
-        bool bIdleFlag = true;
+        bool bIdleFlag = false;
 
         // e-SIM server data Parsing시, 사용 할 변수.
         string strServerAllData = "";
@@ -109,14 +109,9 @@ namespace ReflowCoolingSystem
                         Define.dCH1PsiSetValue = 0.0;
                         Define.dCH2PsiSetValue = 0.0;
                         Define.dCH3PsiSetValue = 0.0;
-                    }
-                    
-                    /*
-                    if ((Define.bAlarm1 == false) && (Define.bAlarm2 == false) && (Define.bAlarm3 == false))
-                    {
+
                         Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
-                    } 
-                    */
+                    }
                 }
                 else if (Define.ReflowState == Define.REFLOW_RUN)
                 {
@@ -128,16 +123,11 @@ namespace ReflowCoolingSystem
                         Define.seqCtrl[module] = Define.CTRL_RUN;
                         Define.seqSts[module] = Define.STS_IDLE;
 
+                        Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.On, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
+
                         bIdleFlag = false;
 
                         bRecipeReadFlag = true;
-
-                        /*
-                        if ((Define.bAlarm1 == false) && (Define.bAlarm2 == false) && (Define.bAlarm3 == false))
-                        {
-                            Global.Towerlamp_Set((byte)Switch.Off, (byte)Switch.Off, (byte)Switch.On, (byte)Switch.Off, (byte)Switch.Off, (byte)Switch.Off);
-                        } 
-                        */
                     }
                 }
                
@@ -704,7 +694,8 @@ namespace ReflowCoolingSystem
             // Create a request for the URL.                        
             // Only device parameter
             //WebRequest request = WebRequest.Create("http://k5cimservice.amkor.co.kr:8080/ysj/ecim/get_cim_params?equip_asset=" + Define.SBA_ASSET + "&params=Device");
-            WebRequest request = WebRequest.Create("http://k5cimservice.amkor.co.kr:8080/ysj/ecim/get_cim_params?equip_asset=" + Define.SBA_ASSET + "&params=PDL");
+            //WebRequest request = WebRequest.Create("http://k5cimservice.amkor.co.kr:8080/ysj/ecim/get_cim_params?equip_asset=" + Define.SBA_ASSET + "&params=PDL");
+            WebRequest request = WebRequest.Create("http://cim_service.amkor.co.kr:8080/ysj/ecim/get_cim_params?equip_asset=" + Define.SBA_ASSET + "&params=PDL");
 
             // If required by the server, set the credentials.
             request.Credentials = CredentialCache.DefaultCredentials;

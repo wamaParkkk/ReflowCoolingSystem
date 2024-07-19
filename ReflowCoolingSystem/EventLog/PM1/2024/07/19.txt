@@ -1,0 +1,16 @@
+[2024-07-19, 08:26:44] Complete the REFLOW status init
+[2024-07-19, 08:26:51] Start the air blow setup
+[2024-07-19, 08:26:51] Loading registered device
+[2024-07-19, 08:26:53] Loading process recipe file
+[2024-07-19, 08:26:53] Recipe file was successfully read : 70psi.csv
+[2024-07-19, 08:27:00] Complete the REFLOW status init
+[2024-07-19, 08:27:00] [LOG-IN] [000000_Amkor_Master]
+[2024-07-19, 08:27:30] Complete the REFLOW status init
+[2024-07-19, 08:27:38] Start the air blow setup
+[2024-07-19, 08:27:38] Loading registered device
+[2024-07-19, 08:27:40] Loading process recipe file
+[2024-07-19, 08:27:40] Recipe file was successfully read : 70psi.csv
+[2024-07-19, 08:27:44] Complete the REFLOW status init
+[2024-07-19, 08:27:44] [LOG-IN] [000000_Amkor_Master]
+[2024-07-19, 08:29:07] Complete the REFLOW status init
+[2024-07-19, 08:29:20] 스레드가 중단되었습니다.
